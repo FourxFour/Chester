@@ -29,7 +29,8 @@
 	.navItem ul li a{
 		text-decoration: none;
 		color:black;
-		font-size: 150%;
+		font-size: 110%;
+		color:#808080;
 	}	
 	.logo img{
 		padding-top:20px;
@@ -217,7 +218,10 @@
 		font-size: 80%;
 		color:white;		
 	}
-
+	.rational .rationcontainer .description1 h1{
+		font-size: 140%;
+		color:white;		
+	}
 
 
 
@@ -246,7 +250,10 @@
 		font-size: 80%;
 		color:white;		
 	}
-
+	.rational .rationcontainer .description2 h1{
+		font-size: 140%;
+		color:white;		
+	}
 
 
 
@@ -276,7 +283,10 @@
 		color:white;		
 	}
 
-
+	.rational .rationcontainer .description3 h1{
+		font-size: 140%;
+		color:white;		
+	}
 
 
 
@@ -307,7 +317,10 @@
 	}
 
 
-
+	.rational .rationcontainer .description4 h1{
+		font-size: 140%;
+		color:white;		
+	}
 
 
 
@@ -336,36 +349,32 @@
 		font-size: 120%;		
 	}
 	.sitemap{
-		background-color: white;
-		height: 500px;
+		background-color: white;		
+		color:#808080;		
+	}
+
+
+	.sitemap h1{
+		padding-top:10px;
+		font-size: 120%;		
+	}
+	.sitemap .list ul{
+		text-align: center;
+		padding-top:10px;
+	}
+	.sitemap .list ul li{		
+		display:inline;				
+	}
+
+	.sitemap .list ul li a{
+		text-decoration: none;
 		color:#808080;
-		font-size: 200%;
+		font-size: 80%;		
+		margin-right: 30px;
+	}	
+	.sitemap hr{
+		margin:0;
 	}
-
-	table{
-		width:100%;
-	}
-	table tr{
-		width:100%;
-		height: 350px;
-	}
-	table tr td{
-		width:25%;
-		height:150px;
-		padding:10px 10px 10px 10px;
-	}
-	table tr td .week{
-		width:250px;
-		height:250px;
-		border-radius: 50%;
-		overflow: hidden;
-	}
-	table tr td img{
-		width:300px;
-		height:300px;
-		
-	}
-
 
 
 	a.back-to-top {
