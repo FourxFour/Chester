@@ -1,0 +1,192 @@
+/* Font Size 1rem = 10px*/
+html{
+  font-size: 62.5%;
+  line-height: 1.5rem;
+}
+
+section {
+    border-bottom: solid 1px;
+    padding-bottom: 2em;
+}
+.page h3, .page h2, .page h4 {
+    color: #3d9988;
+}
+
+/* --------------------
+--------------------------------
+---------------------
+      Navigation
+-------------------------
+----------------------
+----------------------------
+ * --------------------------*/
+
+/* THIS CREATES THE BUTTON (OUTSIDE) IN THE HAMBURGER*/  
+  @media(max-width:550px){
+  .menu{
+    display:block;
+    position:relative;
+    height:0.75em;
+    margin-top:1em;
+    margin-left:.25em;
+  
+  }
+/* THIS CREATES THE BUTTON (Inside) IN THE HAMBURGER*/
+  .menu div{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.25em;
+    width: 1em;
+    height: 0.15em;
+    background: black;
+    /*This creates two extra black lines to finish of the HAM MENU*/
+    /*horiz,vert,blur,spread BELOW*/
+    box-shadow: 
+                0 0.25em 0 0 black,
+                0 0.5em 0 0 black;
+  }
+  .menu_links{
+    display:none;
+    text-align:top;
+    list-style-type: none;
+  }
+  
+  .menu_links li{
+    list-style-type: none;
+    text-decoration:none;
+  }
+  .menu_links li a{
+     text-decoration:none;
+}
+
+#main_content {
+ position:relative;
+ left:0px;
+}
+
+}
+
+/*Fixed Linking Issue REMOVED z-index(-1)*/
+/* Larger than phablet */
+@media (min-width: 550px) {
+#side_nav {
+    position: fixed;
+    padding-left: 1rem;
+    top: 4rem;
+    width: 20rem;
+    text-decoration: none;
+}
+
+#side_nav a:link, #side_nav a:visited, #side_nav a:hover, #side_nav a:active {
+    text-decoration: none;
+    
+}
+
+.top_nav {
+    border-bottom: solid 1px;
+}
+
+.mid_nav {
+    top: 10px;
+    border-bottom: solid 1px;
+}
+
+/***CONTENT****/
+
+#main_content {
+    position: relative;
+    left: 25rem;  
+}
+
+}
+
+.section {
+  padding: 8rem 0 7rem;
+  text-align: center;
+}
+
+.section-heading {
+  margin-top: 2.0rem;
+  margin-bottom: 1.2rem;
+}
+
+.values1, .values2, .values3, .values4, .values5 {
+  background-size: cover;
+  padding-bottom: 5rem;
+  position: relative;
+  z-index: 1;
+}
+
+/*fixed z-indez issue*/
+.values1 {
+  background-image: url('../images/values-bg.jpg');
+}
+
+
+.values2 {
+  background-image: url('../images/webdevelopment.jpg');
+}
+
+.values3 {
+  background-image: url('../images/Web-Design-Concept copy.jpg');  
+}
+
+.values4 {
+  
+  background-image: url('../images/web devlopment1 copy.jpg');
+}
+
+.values5 {
+  background-image: url('../images/keyboard copy.jpg'); 
+}
+
+.value-heading {
+  height: 300px;
+  margin-bottom: .3rem;
+  margin-top: .5rem;
+  color: #fff;
+
+}
+
+.value-heading2 {
+    height: 30rem;
+    margin-bottom: .3rem;
+    margin-top: .5rem;
+    color: black;
+}
+
+.value-description, .value-description2 {
+  display:block;
+  font-weight: 300;
+  font-size: 2.4rem;
+
+}
+.value-description {
+  color: #fff; 
+}
+.value-description2 {
+  color: black; 
+}
+
+#logo{
+    margin:2rem;
+    height: 10rem;
+    width:20rem;
+    top: 25rem;
+    left: 1rem;
+
+}
+
+@media(min-width:1220px){
+#logo {
+    position: absolute;
+    height: 10rem;
+    width:20rem;
+    top: 25rem;
+    left: 1rem;
+}
+
+#blogger {
+    margin-left: 3rem;
+}
