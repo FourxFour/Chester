@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>My Space</title>
+
+<link rel="stylesheet" type="text/css" href="http://static.tumblr.com/myialb2/9iQnx9tv1/reset.css">
+<link rel="stylesheet" type="text/css" href="http://static.tumblr.com/myialb2/eFinx9tv0/grid.css">
+
+<meta name="image:Background" content="http://static.tumblr.com/..."/>
+<meta name="color:background" content="white">
+<meta name="if:ShowSocialMedia" content="1"/>
+<script src ="http://static.tumblr.com/myialb2/8mKnx9y55/jquery.js"></script>
+</head>
+
+
+<style>
+    .background_image{
+        background-image: url('{image:Background}');
+        background-size:cover;
+        height: 800px;
+    }
+    .description_wrapper{
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .description{
+        font-size: 400%;
+        color: white;
+        text-align:center;
+        
+    }
+    .group_icon{
+        height: 20px;
+    }
+    .group_icon img{
+        width:120px;
+        display:block;
+        margin:auto;
+    }
+
+    .header{
+        
+    }
+    .row1{
+        overflow:hidden;
+    }
+    .row2{
+        overflow:hidden;
+    }
+    .row3{
+        overflow:hidden;
+    }
+    .header a{
+        text-decoration: none;
+        color: #808080;
+        padding-top: 5px;
+        font-size:1.2em;
+    }
+    .post_wrapper{
+        background-color:{color:background};
+    }
+    
+    .post_wrapper .post_container{
+        padding-bottom:10px;
+        padding-top:10px;
+        border-bottom:2px solid #808080;
+    }    
+    .side_row{
+        width:100%;
+        text-align:center;
+        color:#808080;
+        font-size:1em;
+    }
+    
+    .row3-1 img{
+        display:block;
+        margin:auto;
+    }
+
+    .post_wrapper .post_container .row3-2 a{
+        font-size:1em;
+        text-decoration:none;
+        color:#808080;
+    }
+    .pagination{
+        text-align:center;
+    }
+    .post figure{
+        width:100%;
+    }
+    .post figure img{
+        max-width:100%;
+        height:auto;
+        display:block;
+        margin:auto;
+    }
+    .post .title{
+        text-align:left;
+    }
+    .post .type{
+        text-align:right;
+        font-size:1.2em;
+    }
+    .post .title a{
+        text-decoration:none;
+        font-size:1.2em;
+    }
+    .footer .copy_right{
+        text-align:center;
+    }
+    .footer .search{
+        text-align:center;
+        display:block;
+    }
+    
+    .social_media a img{
+        max-width:30px;
+        height:auto;
+        display:block;
+        margin:auto;
+    }
+</style>
+
+<body>
+    <div class = "wrapper">
+        <div class = "row1 header">
+            <div class="container">
+                <div class = "two columns group_icon">
+                    <center><img src ="http://static.tumblr.com/myialb2/CN8nywvp0/logo.jpg"></center>
+                </div>
+                {block:HasPages}
+    	            
+                        <div class = "two columns">
+                            <center><a href="/">Home</a></center>
+                         </div>
+                        {block:Pages}
+                             <div class = "two columns">
+                                <center><a href="{URL}">{Label}</a></center>
+                            </div>
+                        {/block:Pages}
+    	           
+                {/block:HasPages}
+           </div>
+    	</div>
+    
+    
+    		<div class = "row2">
+    		        <div class = "background_image">
+        		        <div class ="container description_wrapper">
+        		            {block:Description}
+        		            <h1 class = "description">
+        		                {Description}
+        		            </h1>
+        		            {/block:Description}
+        		        </div>
+    		        </div>
+    		    
+    		</div>
+    		
+    		
+    		<div class="row3 post_wrapper">
+    		{block:Posts}
+        		<div class = "container post_container">
+        		    <div class = "three columns" >
+        		        <div class = "side_post">
+        		            <div class = "row3-1">
+        		                <img src="{PortraitURL-96}"/>
+        		            </div>
+        		            <div class="row3-2 side_row">
+            		            {block:Date}
+            		                <a href="{Permalink}"><time>{Month}{DayOfMonthWithZero},{Year}</time></a>	
+            		            {/block:date}
+        		            </div>
+        		            <div class="row3-3 side_row">
+                                <h1>{PostAuthorName}</h1>
+        		            </div>
+        		            <div class="row3-4 side_row">
+                                {block:HasTags} 
+                                    {block:Tags} 
+                                        {Tag}
+                                    {/block:Tags}
+                                {/block:HasTags}
+        		            </div>
+        		        </div>
+        		    </div>
+        		    
+        		    <div class = "eight columns">
+        		        <div class = "row-3-1-1">
+        		        {block:Text}
+                            <div class="post title">
+                                <div class = "title_row">
+                                    <div class = "one-half column title">
+                                    {block:Title}
+                                        <h1><a href="{Permalink}">Title: {Title}</a></h1>
+                                    {/block:Title}
+                                    
+                                    {block:Caption} 
+                                       <h1>Caption: {Caption}</h1>
+                                    {/block:Caption}
+                                    </div>
+                                    <div class = "one-half column type">
+                                        <h1>Type: {PostType}</h1>
+                                    </div>
+                                </div>
+                                <div class="body_row">
+                                    <div class="twelve columns">{Body}</div>
+                                </div>
+                                
+                            </div>
+                        {/block:Text}
+                        </div>
+                        <div class = "row-3-2-1">
+                        {block:Photo}
+                            <div class="post photo">
+                                <img src="{PhotoURL-250}" alt="{PhotoAlt}"/>
+                                {block:Caption}
+                                    <div class="caption">{Caption}</div>
+                                {/block:Caption}
+                            </div>
+                        {/block:Photo}
+                        </div>
+        		    </div>
+        		</div>
+    		{/block:Posts}
+    		</div>
+    		
+    		<div class = "row4">
+        		<div class = "container">
+            		<div class="pagination">
+                		{block:Pagination}
+                		    {block:PreviousPage}
+                                <a href="{PreviousPage}">Previous</a>
+                            {/block:PreviousPage}
+                            {block:JumpPagination length="3"}
+                                {block:CurrentPage}
+                                    <span class="current_page">{PageNumber}</span>
+                                {/block:CurrentPage}
+                                
+                                {block:JumpPage}
+                                    <a class="jump_page" href="{URL}">{PageNumber}</a>
+                                {/block:JumpPage}
+                            {/block:JumpPagination}
+                            {block:NextPage}
+                                <a href="{NextPage}">Next</a>
+                            {/block:NextPage}
+                        {/block:Pagination}
+            		</div>
+            	</div>
+    		</div>
+    		<div class ="row5 footer">
+    		    <div class = "container">
+    		        <div class = "four columns copy_right">
+    		            <h1>@Copy Right 2015-Dec-05</h1>
+    		        </div>
+    		        <div class = "four columns search">
+    		            <form  action="/search" method="get">
+    		                <input type ="text" name = "q" value = "{SearchQuery}"/>
+    		                <input type="submit" value="Search"/>
+    		            </form>
+    		        </div>
+    		        <div class = "four columns social_media">
+                		{block:IfShowSocialMedia}
+                            
+                                <div class="three columns icons">
+                                <a href = "https://www.facebook.com/"><img src = "http://static.tumblr.com/myialb2/RZZnyxh6d/facebook.png" >
+                                </div>
+                                <div class="three columns icons"><a href = "https://twitter.com/?lang=en"><img src = "http://static.tumblr.com/myialb2/MTznyxh6b/twitter.png" ></div>
+                                <div class="three columns icons"><a href = "https://www.linkedin.com"><img src = "http://static.tumblr.com/myialb2/DcInyxh68/linkedin.png" ></div>
+                                <div class="three columns icons"><a href = "https://www.instagram.com/?hl=en"><img src = "http://static.tumblr.com/myialb2/c8pnyxh65/instagram.png" ></div>
+                            
+                        {/block:IfShowPeopleIFollow}
+                        {block:IfNotShowSocialMedia}
+                            <h1>Social Media off</h1>
+                        {/block:IfNotShowSocialMedia}
+    		        </div>
+    		    </div>
+    		</div>   		
+    		
+    </div>
+</body>
+
+</html>

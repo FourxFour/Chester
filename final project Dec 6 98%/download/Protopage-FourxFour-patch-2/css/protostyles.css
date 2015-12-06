@@ -1,0 +1,94 @@
+
+
+
+/* Navigation
+ * ------------------------------------------*/
+
+#side_nav {
+    position: fixed;
+    padding-left: 10px;
+    top: 40px;
+    width: 200px;
+    z-index: -1;
+    text-decoration: none;
+}
+
+.top_nav {
+    border-bottom: solid 1px;
+}
+
+.mid_nav {
+    top: 10px;
+    border-bottom: solid 1px;
+}
+
+
+#main_content {
+    position: relative;
+    left: 250px;  
+}
+
+
+.section {
+  padding: 8rem 0 7rem;
+  text-align: center;
+}
+
+.section-heading {
+  margin-top: 2.0rem;
+  margin-bottom: 1.2rem;
+}
+
+.values1, .values2, .values3, .values4 {
+  background-size: cover;
+  padding-bottom: 5rem;
+}
+
+.values1 {
+  background-image: url('../images/values-bg.jpg');
+}
+
+.values2 {
+  background-image: url('../images/webdevelopment.jpg');
+}
+
+.values3 {
+  background-image: url('../images/Web-Design-Concept copy.jpg');  
+}
+
+.values4 {
+    background-image: url('../images/web devlopment1 copy.jpg');
+}
+.value-heading {
+  height: 300px;
+  margin-bottom: .3rem;
+  margin-top: .5rem;
+  color: #fff;
+
+}
+
+.value-heading2 {
+    height: 300px;
+    margin-bottom: .3rem;
+    margin-top: .5rem;
+    color: black;
+}
+.value-description, .value-description2 {
+  font-weight: 300;
+  font-size: 24px;
+
+}
+.value-description {
+  color: #fff; 
+}
+.value-description2 {
+  color: black; 
+}
+
+#logo {
+    position: absolute;
+    height: 100px;
+    width: 200px;
+    top: 250px;
+    left: 10px;
+}

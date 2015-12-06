@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+    <!--
+
+Author: Brett Parr A00798861
+Date: nov.28
+
+-->
+<head>
+    <meta charset="UTF-8">
+    <title>Rationale Page</title>
+		<meta name="description" content="A site created for students and instructors of BCIT's COMP 1950 course. Course lectures,exercises and resources." />
+        <link rel="stylesheet" href="css/normalize.css" title="layout_styles"/>
+        <link rel="stylesheet" href="css/skeleton.css" title="layout_styles"/>
+        <link rel="stylesheet" href="css/protostyles.css" title="layout_styles"/>
+        <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('a[href^="#"]').on('click',function(e){
+                    e.preventDefault();
+                    var target = this.hash;
+                    var $target = $(target);
+        
+                    $('html, body').stop().animate({
+                        'scrollTop': $target.offset().top},900,'swing',function(){
+                            window.location.hash = target;
+                    });
+                });
+            });
+        </script>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="twelve columns">
+    <a id="top"></a>
+    <div class = "rational" id = "rational">
+		<div class = "rationcontainer">
+			<div class = "imagecontainer">
+					<div class = "rationalIMG">
+						<img src = "image/why.jpg">
+					</div>
+			</div>
+			</div>
+		</div><!-- /.row -->
+		<div class="row">
+			<div class="twelve columns">
+                <div class = "infocontainer">
+					<div class = "personInfo">
+					
+						<h1>Rationale Page</h1>
+                            <nav>
+                            <ul class= "nav">
+                                <li><a href ="#introduction">Introduction</a></li>
+                                <li><a href ="#lectures">Class Lectures</a></li>
+                                <li><a href ="#blog">Blog</a></li>
+                                <li><a href ="#materials">Course Materials</a></li>
+                                <li><a href ="#design">Design</a></li>
+                                <li><a href ="#conclusion">Conclusion</a></li>
+                            </ul>
+                            </nav>
+			</div>
+		</div><!-- /.row -->
+		<div class="row">
+			<div class="twelve columns">
+                            <main>
+                                <div class = "introduction" id = "introduction">
+                                <h2>Introduction</h2>
+                                    <p>This website began as a final project for BCIT's COMP 1950 course on Intermediate Web Development and Design.&nbsp; The  rationale behind 
+creating it can be expressed by four main ideas. Primarily, we wanted to provide a 
+medium for displaying class lectures in an easily accessible way for students and teachers of COMP 1950.&nbsp; Another goal was to facilitate improved communication between 
+students in the form of a blog with the idea that this will impact positively on student 
+learning.&nbsp; It is also our hope that this website will provide an organized and user friendly way to access all course materials including assignments, readings, resources and downloads.&nbsp; Finally, we wanted to present this website in line with the BCIT website, creating a cohesive design for the class in relation to the school. </p>
+                                </div>
+                            </main>
+			</div>
+		</div><!-- /.row -->
+		<div class="row">
+			<div class="twelve columns">
+                            <article>
+                                <div class = "lectures" id = "lectures">
+                                <h2>Class Lectures</h2>
+                                    <p>Because class lectures are the basis of the course as a whole, we wanted to provide them in an easily accessible way. Not only for students following along as the course proceeds, but also for the teacher of the course to quickly and easily update and post new lectures and resources as they see fit.&nbsp; We wanted to create a simple way for following the in-class chronology with a lecture page for each week.  </p>
+                                </div>
+                            </article>
+			</div>
+		</div><!-- /.row -->
+		<div class="row">
+			<div class="twelve columns">
+                            <article>
+                                <div class = "blog" id = "blog">
+                                <h2>Blog</h2>
+                                    <p>In an effort to improve and facilitate communication between students and teachers of COMP 1950, we have created a Tumblr Blog, allowing students to share and post questions and answers.&nbsp; This is an accesible place to keep users up-to-date on late-breaking news, share interesting articles and post other notices, directly from the lecture page. </p>
+                                </div>
+                            </article>
+			</div>
+		</div><!-- /.row -->
+		<div class="row">
+			<div class="twelve columns">
+                            <article>
+                                <div class = "materials" id = "materials">
+                                <h2>Course Materials</h2>
+                                    <p>One improvement we hope to accomplish with this website, is creating organized and userfriendly access to all course materials beyond the lectures in one space.&nbsp; This avoids bouncing around trying to work backwards to find it all as it is presented. This includes all downloads, exercises, assignments, readings, and resources pursuant to the course.   </p>
+                                </div>
+                            </article>
+			</div>
+		</div><!-- /.row -->
+		<div class="row">
+			<div class="twelve columns">
+                            <article>
+                                <div class = "design" id = "design">
+                                <h2>Design</h2>
+                                    <p>We wanted to present each page and all of the course information from lectures to resources and exercises in our own unique way but with a design cohesive to that of the BCIT school website.&nbsp; We wanted a straightforward layout with a very clean look using simple graphics and images.  We took our inspiration from some of our favourite sites: apple.com, nait.ca, simplebits.com, and alistapart.com. </p>
+                                </div>
+                            </article>
+			</div>
+		</div><!-- /.row -->
+		<div class="row">
+			<div class="twelve columns">
+                            <article>
+                                <div class = "conclusion" id = "conclusion">
+                                <h2>Conclusion</h2>
+                                    <p>Overall it was our intention to provide students with every opportunity to learn and to create this site with teachers in mind as well, offering a space that is userfriendly in a clean and organized way. Having the back end be easily updateable for teachers, while at the same time giving students access to all the course information, resources and materials in the most efficient way possible.&nbsp; We also wanted to create it all with a very clean and simple look, uniting the style at least somewhat with the rest of the BCIT website design and layout. Using Tumblr to add a blog space where students and teachers can quickly and easily communicate creates an invaluable resource to post questions, share and learn together, and also get up to date information and notices regarding the class.&nbsp; We are proud to present the 4x4 COMP 1950 coursepage.  </p>
+                                </div>
+                            </article>
+			</div>
+		</div><!-- /.row -->
+					</div>
+				</div>
+        </div>
+	</div>
+    <a href="#top">[Back to the Top]</a>
+</body>
+</html>
