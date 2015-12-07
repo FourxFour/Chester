@@ -1,0 +1,1696 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+	<meta charset="UTF-8"> 
+    <title>ProtoPage</title>
+    <link rel="stylesheet" href="css/normalize.css" title="layout_styles"/>
+    <link rel="stylesheet" href="css/skeleton.css" title="layout_styles"/>
+    <link rel="stylesheet" href="css/protostyles.css" title="layout_styles"/> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+</head>
+	<script>
+	/*NAVIGATION*/
+	$(document).ready(function(){
+	$(".menu").click(function(){
+	$(".menu_links").toggle(1000);
+	});
+
+	$('body').prepend('<a href="../projectv2.html" class="back-to-top">Back to Top</a>');
+
+		var amountScrolled = 0;
+
+
+	});
+	</script>
+<body>
+<!--headers-->
+   <div class="section values1">
+    <div class="container">	
+      <div class="row">        
+        <div class="nine column value">
+	    <h1 class="value-heading">Welcome</h1>
+	    <img id="logo" alt="logo" src="images/bcit-logo.png">
+	    <p class="value-description">COMP 1950 - Web Development and Design 2</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+ <!--navigation-->
+   <div class="container">
+	<div class="row">
+    <div class="one columns">
+	<div class = "menu"><div></div></div> 
+	<div class = "menu_links">
+		<div id="side_nav">
+		    <div class="top_nav">
+			<ul>
+			    <li><span style="font-weight:bold;">The Basics</span></li>    
+			    <li><a href="#about">about</a></li>
+			    <li><a href="#outline">outline</a></li>
+			    <li><a href="#resources">resources</a></li>
+			</ul>
+		    </div>
+		    <div class="mid_nav">
+			<ul>
+			    <li><span style="font-weight:bold;">Standards and Tools</span></li>
+			    <li><a href="#week1">week1</a></li>
+			    <li><a href="#week2">week2</a></li>
+			    <li><a href="#week3">week3</a></li>
+			    <li><a href="#">week4</a></li>
+			    <li><a href="#">week5</a></li>
+			    <li><a href="#">week6</a></li>
+			</ul>
+		    </div>
+		    <div id="blog_nav">
+			<h5>Comp 1950 Blog</h5>
+			<p>check out updates on the comp 1950 blogspace</p>
+			<div id="blogger">
+			<a href="http://compnineteenfifty.tumblr.com"><img src="images/blog.png" alt="blog_logo"></a>
+			</div>
+		    </div>											
+		    </div> 
+		</div>
+	    </div>
+	</div>
+    </div>
+
+<!--content-->   
+	<div class="container">
+	<div class="row">
+	    <div class="nine columns">
+		<div id="main_content">
+		    <section>
+		    <div class="page">
+		    <h1 class="page-title"><a name="about"></a>About</h1>
+		    <p>COMP 1950 continues fundamental principles and techniques for developing effective web sites. Get more details on the course.</p>
+		  		  
+		  <h3>About this course</h3>
+		  
+		  <p>Some information you might like to know:</p>
+		  
+		  <ul>
+		    <li>More theory than in 1850</li>
+		    <li>Still a fair amount of practical experience</li>
+		    <li>Hands on coding and working in teams</li>
+		    <li>Real-life methods taken from developers</li>
+		  </ul>
+		  
+		  <h3>Class and homework exercises</h3>
+		  
+		  <ul>
+		    <li>Assignments/homework: 20%</li>
+		    <li>Quiz/Midterm: 30%</li>
+		    <li>Project: 25%</li>
+		    <li>Final Exam: 25%</li>
+		  </ul>
+		  
+		  <h3>Assignments</h3>
+		  
+		  <ul>
+		    <li>Generally given during the lab portion, due the following week</li>
+		    <li>Linked from your COMP 1950 page (more on that later)</li>
+		  </ul>
+		  
+		  <h3>Quizzes &amp; final exam</h3>
+		  
+		  <p>All quizzes will feature at least one, and possibly all of the following question types:</p>
+		  
+		  <ul>
+		    <li>fill-in-the-blanks</li>
+		    <li>short answer</li>
+		    <li>matching</li>
+		    <li>code correction</li>
+		    <li>code writing</li>
+		  </ul>
+		  
+		  <h3>Absence</h3>
+		  
+		  <p>If you are going to miss class for any reason, you absolutely must email me: acalder1@my.bcit.ca</p>
+		  
+		  <p>Include the word <strong>absent</strong> in the subject line somewhere so I can find it, should I need to defend your absence from class to my boss.</p>
+		  
+		  <h3>Pre-requisite</h3>
+		  <p>In order to have signed up for this course, you must have either:</p>
+		  
+		  <ul>
+		    <li>completed COMP 1850 with a passing grade, or;</li>
+		    <li>certified that you understand the following concepts</li>
+		    <li>If you are taking this course and do not understand the basics of the following, you should contact Joanne Atha as soon as possible and switch to COMP 1850.</li>
+		  </ul>
+		  
+		  <h3>Here is what I expect you will know already:</h3>
+		  
+		  <dl>
+		    <dt>HTML</dt>
+		    <dd>You should know how HTML works and how to markup a basic page.</dd>
+		    <dt>CSS</dt>
+		    <dd>You should have an introductory understanding of what CSS is and how it works. IDs, Classes, Elements. Beyond that we will be learning in this course.</dd>
+		    <dt>FTP</dt>
+		    <dd>You should know how to log into an FTP server and upload/download files. If you donÕt know how to do this at all, you will need to learn this immediately.</dd>
+		  </dl>
+		  
+		  <h2>My expectation</h2>
+		  
+		  <p>I am the instructor for 1950 and, as such, I get to set the rules. Think of me like your boss. Here are the rules I have for this course</p>
+		  
+		  <dl>
+		    <dt>File/Folder Names</dt>
+		    <dd>While it is technically possible, I do not want any capital letters or spaces in your file or folder names. Special Characters (those characters over the numbers on your keyboard) just wonÕt work.</dd>
+		    <dt>Student Pages</dt>
+		    <dd>The student pages are located at: students.thenet.ca/(student_name) Notice that there is no www at the front. More detail on student pages.</dd>
+		    <dt>Course web site</dt>
+		    <dd>You will set up a course web site for COMP 1950 and will maintain it each week. Homework, in-class assignments and any exercises should be on your course web site. In order to get any feedback, your assignments must be completed on time. Otherwise I simply do not have the time to mark late homewok.</dd>
+		    <dt>Navigation</dt>
+		    <dd>Please try to make things as easy to find as possible</dd>
+		    <dt>A simple reminder</dt>
+		    <dd>This course is about Web Development. This means you should conduct yourself as Web Developers! Think about what you are creating and how it would/could/should be viewed by others.</dd>
+		  </dl> 
+		</div>
+		    
+		</div>
+	    </div>
+	</div>
+	</div>  
+
+<!--headers-->
+   <div class="section values2">
+    
+    <div class="container">
+      <div class="row">        
+        <div class="nine column value">
+	    <h1 class="value-heading2">Outline</h1>
+	    <img id="logo" alt="logo" src="images/bcit-logo.png">
+	    <p class="value-description2">COMP 1950 - Web Development and Design 2</p>
+	    <a href ="../projectv2.html"> TOP PAGE</a>
+        </div>
+      </div>
+    </div>
+  </div>
+	
+<!--content--> 	
+<div class="container">
+	<div class="row">
+	    <div class="nine columns">
+		<div id="main_content">
+		    <div class="page">
+			<h1 class="page-title"><a name="outline"></a>Outline</h1>
+			<p>Here is the current Course Outline (by week):</p>
+		      
+		      <h3>Lecture 1</h3>
+		      
+		      <ul>
+			<li>tools &amp; standards</li>
+			<li>development environments</li>
+			<li>standards</li>
+			<li>semantics</li>
+			<li>site structure</li>
+			<li><strong>homework #1 assigned</strong></li>
+		      </ul>
+		      
+		      <h3>Lecture 2</h3>
+		      
+		      <ul>
+			<li>markup languages</li>
+			<li>HTML</li>
+			<li>XHTML</li>
+			<li>HTML5</li>
+			<li>CSS review</li>
+			<li><strong>homework #2 assigned</strong></li>
+		      </ul>
+		      
+		      <h3>Lecture 3</h3>
+		      
+		      <ul>
+			<li>CSS techniques</li>
+			<li>alternate stylesheets</li>
+			<li>importing</li>
+			<li>advanced selectors</li>
+			<li>link specificity</li>
+			<li><strong>homework #3 assigned</strong></li>
+		      </ul>
+		      
+		      <h3>Lecture 4</h3>
+		      
+		      <ul>
+			<li><strong>quiz on weeks 1-3</strong></li>
+			<li>CSS techniques, layouts</li>
+			<li>sprites</li>
+			<li>css resets</li>
+			<li>positioning behaviors</li>
+			<li>layout strategies</li>
+			<li><strong>homework #4 assigned</strong></li>
+		      </ul>
+		      
+		      <h3>Lecture 5</h3>
+		      
+		      <ul>
+			<li>responsive design</li>
+			<li>styling for print</li>
+			<li>media queries</li>
+			<li><strong>homework #5 assigned</strong></li>
+		      </ul>
+		      
+		      <h3>Lecture 6</h3>
+		      
+		      <ul>
+			<li>CSS3</li>
+			<li>quiz #5 - written, closed book</li>
+			<li>vendor prefixing</li>
+			<li>graceful degrading</li>
+			<li>new properties</li>
+			<li>transitions</li>
+			<li><strong>homework #6 assigned</strong></li>
+		      </ul>
+		      
+		      <h3>Lecture 7</h3>
+		      
+		      <ul>
+			<li><strong>quiz on weeks 4-6</strong></li>
+			<li>javascript frameworks</li>
+			<li>jQuery</li>
+			<li><strong>homework #7 assigned</strong></li>
+		      </ul>
+		      
+		      <h3>Lecture 8</h3>
+		      
+		      <ul>
+			<li>dynamic content</li>
+			<li>http server setup, structure</li>
+			<li>tokens, server side includes</li>
+			<li>server management techniques</li>
+			<li><strong>homework #8 assigned</strong></li>
+		      </ul>
+		      
+		      <h3>Lecture 9</h3>
+		      
+		      <ul>
+			<li>template development</li>
+			<li>quiz #7 - written, closed book</li>
+			<li>templating fundamentals</li>
+			<li>seo strategies</li>
+			<li><strong>homework #9 assigned</strong></li>
+		      </ul>
+		      
+		      <h3>Lecture 10</h3>
+		      
+		      <ul>
+			<li><strong>quiz on weeks 7-9</strong></li>
+			<li>methodology</li>
+			<li>web development cycle</li>
+			<li>client questionaires</li>
+			<li>collaborative frameworks</li>
+			<li><strong>group project assigned</strong></li>
+		      </ul>
+		      
+		      <h3>Lecture 11</h3>
+		      
+		      <ul>
+			<li>group project work</li>
+		      </ul>
+		      
+		      <h3>Lecture 12</h3>
+		      
+		      <ul>
+			<li><strong>final exam</strong></li>
+			<li>practical, open book</li>
+		      </ul>
+		      
+		      <h2>Book for the course</h2>
+		      
+		      <p>I donÕt have a book for this course, because there is just too much to teach at an intermediate level.  I have yet to find a book adequate.</p>
+		      
+		      <p>However, certain subjects have excellent books and IÕll mention them during the lecture.  You are not required to buy them, but are encouraged to take a look if interested.</p>
+		      
+		      <h2>Marking</h2>
+		      
+		      <p>I donÕt mark individual homework assignments.  I mark them as a whole at the end of the course.  </p>
+		      
+		      <p>Instead, I give feedback on each assignment so you know how you are doing.  </p>
+		      
+		      <p>Quizzes, Midterms, the Project and Final are all marked and I will share those marks with you the week after.</p>
+		      
+		      </div>
+		</div>
+	    </div>
+	</div>
+</div>
+
+<!--HEADERS-->
+   <div class="section values3">   
+    <div class="container">
+      <div class="row">        
+        <div class="nine column value">
+          <h1 class="value-heading2">Week 1</h1>
+	  <img id="logo" alt="logo" src="images/bcit-logo.png">
+		  <p class="value-description2">COMP 1950 - Web Development and Design 2</p>
+        </div>
+      </div>
+    </div>
+  </div>
+	
+	
+<!--
+
++++++++++++++++++++++++++++
++++++++++++++++++++++++++++
++++++++++++++++++++++++++++
+
+
++++++++++++++++++++++++++++
+
+CONTENT 
+
+WEEK 1
+
+
++++++++++++++++++++++++++++
+
+
++++++++++++++++++++++++++++
++++++++++++++++++++++++++++
++++++++++++++++++++++++++++
+
+--> 	
+<div class="container">
+	<div class="row">
+	    <div class="nine columns">
+		<div id="main_content">
+		    <div class="page">
+			<h1 class="page-title"><a name="week1"></a>Week 1</h1>
+  <p>Getting started, introductions, standards, tools</p>
+
+<section>
+<h2>Orientation</h2>
+
+<p>Learn about the course to help you determine if this is the right class for you. Take a look at the <a href="/outline">course outline</a></p>
+
+<h3>Outline</h3>
+
+<p>A week-by-week breakdown of what we will learn, homework and other deliverables</p>
+
+<h3>Student Pages</h3>
+
+<p>Each student will get personal webspace. This is not a continuation of your COMP1850 site (if you had one). This site is primarily for you to house your exercises, assignments, group work and more. Make it a site that is usable and functional.</p>
+
+<p>Each student will be assigned web space for their homework and other files. All work performed on lab computers should be saved to personal files.</p>
+
+<p>Your instructor will create webspaces for each student at the end of the first lecture. Please be present for this, as you will be entering your own password.</p>
+
+<p><a href="/studentpages">More information on Student Pages</a>.</p>
+</section>
+
+<section>
+<h2>Tools</h2>
+
+<p>Today, there are a lot of tools in Web Development, many of them are free with a few that have a cost that needs to be judged by how much you will use the tool.</p>
+
+<h3 id="your-tools">Your Tools</h3>
+
+<p>What kind of tools are you using to do your web development? These can be anything from editors to image editors, services for testing browser deployments, language linters, and more.</p>
+
+<p>Some of the tools used by web developers…</p>
+
+<h4>Editors</h4>
+
+<ul>
+  <li><a href="https://notepad-plus-plus.org">Notepad++</a> - Text Editor (Win) * installed in BCIT lab computers *</li>
+  <li><a href="http://www.sublimetext.com">Sublime Text</a> - Text Editor (Mac/Win)</li>
+  <li><a href="https://panic.com/coda/">Coda</a> - Web Dev IDE (Mac)</li>
+  <li><a href="http://www.adobe.com/ca/products/dreamweaver.html">Dreamweaver</a> - Web Dev IDE (Mac/Win)</li>
+  <li><a href="http://www.barebones.com/products/textwrangler/">Text Wrangler</a> - Text Editor (Mac)</li>
+  <li><a href="http://www.htmlkit.com">HTMLKit</a> - Web Dev IDE (Win)</li>
+</ul>
+
+<h4>FTP</h4>
+
+<ul>
+  <li><a href="https://filezilla-project.org">Filezilla</a> - FTP tool (Win) * installed in BCIT lab computers *</li>
+  <li><a href="https://cyberduck.io/?l=en">Cyberduck FTP</a> - FTP tool (Mac)</li>
+</ul>
+
+<p>There are so many more! Maybe you use something not on the above list.</p>
+
+<blockquote>
+  <p>What are your tools?</p>
+</blockquote>
+
+<h3>Browser-based tools</h3>
+
+<p>Today, most modern browsers have some kind of development environment that can be turned on or triggered. Extra functions are available by plug-in or extension.</p>
+
+<p>All browsers have a development environment today, with two primary platforms giving insight to developers through a suite of tools.</p>
+
+<h4>Firefox</h4>
+
+<ul>
+  <li>Mozilla Foundation’s web platform created by web developers</li>
+  <li>Gecko rendering engine: fast and progressive</li>
+  <li>Excellent level of standards compliance</li>
+  <li>Corporate independence</li>
+  <li>No built-in development tools</li>
+  <li>Plethora of add-ons that make web development easy</li>
+  <li>Add-ons have a downside: bloat</li>
+</ul>
+
+<h4>WebKit</h4>
+
+<ul>
+  <li>This is the platform that gives us Chrome, Safari and Opera, with a few other smaller browsers out there as well.</li>
+  <li>Excellent platform that is very fast and standards compliant</li>
+  <li>Third parties can download the source, make local adjustments and release their own version, as Google and Apple have both done</li>
+  <li>Standalone version can be downloaded at any time for the latest release</li>
+  <li>Development is done via the built-in Developer Tools</li>
+  <li>Initially a thin environment, recent releases have made Webkit-based browsers excellent for developers</li>
+  <li>Macintosh based developers may need to enable web developer options in Safari before accessing the devloper tools</li>
+  <li>Mobile and device-specific development also available</li>
+  <li>Remember to test in as many browsers as you can!</li>
+</ul>
+
+<p>Useful tools for this are <a href="http://browsershots.org">BrowserShots</a> (Chrome, Firefox, Safari, Opera) and <a href="http://netrenderer.com">Netrenderer</a> (For IE)</p>
+
+<h3>Firefox Extensions</h3>
+
+<p>Extensions are a big part of Firefox, especially considering the background the browser has in web development.</p>
+
+<p>In fact, <a href="https://addons.mozilla.org/en-US/firefox/extensions/web-development/">Web Development</a> even has it’s own category at the Firefox Add-Ons site.</p>
+
+<p>One of the best tools for Web Developers is the <a href="https://addons.mozilla.org/en-us/firefox/addon/web-developer/">Web Developer toolbar</a></p>
+
+<p>While there are fantastic tools built into each browser, the Web Developer Toolbar proves useful often and is worth having in your portfolio.</p>
+
+<p>Some of the amazing tools this has to offer web developers:</p>
+
+<ul>
+  <li>Disable styles - by embedded/linked/inline as well as all styles, or just a single sheet</li>
+  <li>Edit CSS &amp; HTML - Make live changes to your CSS or HTML!</li>
+  <li>Images - outlining, file sizes, alt information… lots more</li>
+  <li>Form detail - useful for working with form elements</li>
+  <li>Cookie examination and manipulation</li>
+  <li>Built in validators</li>
+  <li>Line Guides &amp; Rulers</li>
+  <li>Element inspector</li>
+</ul>
+
+<blockquote>
+  <p>Let’s take a quick look at the Web Developer Toolbar</p>
+</blockquote>
+
+<ul>
+  <li><a href="https://addons.mozilla.org/en-us/firefox/addon/web-developer/">Install the Web Developer Toolbar in Firefox</a> if you have not already done so</li>
+  <li>Examine the page using the Information tab, display various items on the page</li>
+  <li>Use the Element Information tool (Information &gt; Display Element Information) and click on various items on the page</li>
+  <li>Validate your page with the Tools tab (Tools &gt; Validate HTML)</li>
+  <li>Edit the CSS of the page, or just add some new CSS (CSS &gt; Edit CSS)</li>
+</ul>
+
+<h3>Browser Based Diagnostic Tools</h3>
+
+<p>Like the Web Developer toolbar, this next extension also allows you to work with your web pages, albeit in a very different way.</p>
+
+<p>As we get more complex, the harder it can be to figure out what is going on or what we got right or wrong.</p>
+
+<p>Having a diagnostic tool to assist in developing will make it easier to examine every detail of your web page.</p>
+
+<p>It goes beyond outlining, examining and editing into deep troubleshooting of network, javascript and even XHR (XMLHttpRequest)</p>
+
+<ul>
+  <li>Diagnostic Tool: <a href="http://getfirebug.com/">Firefox Firebug</a> (Add-on)</li>
+  <li>Diagnostic Tool: Firefox (Built-In)</li>
+  <li>Diagnostic Tool: Chrome (Built-In)</li>
+  <li>Diagnostic Tool: Safari (Built-In)</li>
+</ul>
+
+<p>Let’s take a look at Firebug and what it can do!</p>
+
+<p>Get familiar with using Firebug or similar tools. You will be required to use them in the classes ahead.</p>
+
+<h3>Developer Tools Wrap up</h3>
+
+<ul>
+  <li>Firefox was the first browser to have real tools embedded and, with extensions, it’s a real powerhouse now</li>
+  <li>The last few years have seen a constant progression of improved tools in other browsers, bringing everything up a significant notch</li>
+  <li>Not a bad idea to have a “dev browser” that can be weighted down with tools</li>
+</ul>
+</section>
+
+<section>
+<h2>Standards</h2>
+
+<p>Let’s take a look at what Stadards are, what the point is and why they can benefit us or cause sadness later.</p>
+
+<h3>Definition</h3>
+
+<p><em>Web standards are the formal, non-proprietary standards and other technical specifications that define and describe aspects of the World Wide Web.</em></p>
+
+<h4>Real life examples</h4>
+
+<ul>
+  <li>Lightbulbs</li>
+  <li>Grades of gasoline</li>
+  <li>Train rail widths</li>
+  <li>TV Broadcast signals</li>
+  <li>Home appliances</li>
+</ul>
+
+<h4>Why use them?</h4>
+
+<ul>
+  <li>Interoperability</li>
+  <li>Predictable results/dimensions/values</li>
+  <li>A new specification is not needed for each new manufacturing run</li>
+  <li>Need a new microwave? You can count on:
+    <ul>
+      <li>Plug/Voltage/Power</li>
+      <li>Unit size</li>
+      <li>Operation</li>
+    </ul>
+  </li>
+</ul>
+
+<h3>Web Standards</h3>
+
+<p>When you build without standards, you are investing in the here and now, without thinking of tomorrow.</p>
+
+<ul>
+  <li>Code can be hard to support</li>
+  <li>Future developers may be confused</li>
+  <li>Re-engineering websites can be very difficult, costly and time consuming</li>
+  <li>Most important Content is fused to your markup!</li>
+</ul>
+
+<h2>Standards: History toward the Web</h2>
+
+<h3>ISO</h3>
+
+<p><a href="http://www.iso.org">International Organization for Standards</a></p>
+
+<ul>
+  <li><strong>1906:</strong> As the Intn’l Electrotechnical Commission (IEC): in order to better access pre-determined equipment that was interchangeable and interoperable</li>
+  <li><strong>1947:</strong> 25 countries got together to form ISO: “to facilitate the international coordination and unification of industrial standards”</li>
+  <li>Companies agree to become a part of ISO, and gain access to the complete library of standards set by the organization in concert with their many members</li>
+  <li>While it started slowly, many companies ignored standards, in favor of their own “proprietary” methods</li>
+  <li>Momentum, corporate marketing (companies advertising that their product or method conforms with ISO XXXX), and some government legislation (forcing the adoption of certain standards) led to a larger adoption of standards</li>
+</ul>
+
+<p><a href="http://www.w3.org/standards">W3C: World Wide Web Consortium</a></p>
+
+<ul>
+  <li>Web standards are going through the same process that the ISO went through</li>
+  <li>Many companies see the benefits of interoperability - many are still “forging their own”</li>
+  <li>Many companies have standards: Adobe, Microsoft, Apple, Ford, GM</li>
+  <li>Many are proprietary standards, and are not supported by many companies</li>
+  <li>W3C - World Wide Web Consortium: founded by Tim Berners-Lee to try and uniformly put forward standards through a single communication vehicle</li>
+  <li>Leading browser makers did not follow, initially</li>
+  <li>Designers were ‘taking sides’ in the browser wars: users were losers</li>
+</ul>
+
+<h3>W3C Goals</h3>
+
+<ul>
+  <li><strong>Universal Access</strong>: To make the Web accessible to all by promoting technologies that take into account the vast differences in culture, languages, education, ability, material resources, access devices, and physical limitations of users on all continents;</li>
+  <li><strong>Semantic Web</strong>: To develop a software environment that permits each user to make the best use of the resources available on the Web;</li>
+  <li><strong>Web of Trust</strong>: To guide the Web’s development with careful consideration for the novel legal, commercial, and social issues raised by this technology.</li>
+</ul>
+
+<h3>Making Progress</h3>
+
+<p>Eventually, the drive towards standards began to win out</p>
+
+<ul>
+  <li>Users made their voices known and momentum started to slowly shift toward supporting standards</li>
+  <li>Seen as a marketing opportunity: Our browser supports standards!</li>
+  <li>Mozilla Project emerged after a large number of Netscape developers were let go upon the acquisition by AOL</li>
+  <li>Mozilla is now a standards-compliant browser with many features</li>
+  <li>Microsoft and AOL followed shortly with adoption of W3C standards (with limitations)</li>
+  <li>Large companies started joining the W3C to be seen as part of the Standards game</li>
+</ul>
+
+<h3>For Web Developers</h3>
+
+<p>Designing to current W3C specifications means that:</p>
+
+<p><em>Your pages will be viewable in the largest number of browsers, the largest number of devices and (if used correctly) will gracefully degrade as support for CSS or other presentation layers are absent.</em></p>
+
+<p>Some more words from the <a href="http://www.webstandards.org/learn/faq/">Web Standards Project</a> worth reading</p>
+
+<h2>Details of Standards-Driven Development</h2>
+
+<p>Standard HTML + CSS + JS = Front-end Development = Best support</p>
+
+<p>When you use standards-based development, you have the best chance to see your content displayed appropriately across the largest number of browsers.</p>
+
+<ul>
+  <li>Structurally valid HTML code (eg: tags that open are closed. parent-child tag relationships are valid, etc)</li>
+  <li>Logically valid HTML code (eg: ids are not applied more than once per page)</li>
+  <li>Use CSS to develop sites that separate content (HTML) from presentation (CSS)</li>
+  <li>Getting rid of deprecated tags, complex table layouts, browser sniffing, code forking</li>
+  <li>Using Semantic Markup to establish content relationships and logical deployment of content</li>
+</ul>
+
+<h3>Future Compatibility</h3>
+
+<ul>
+  <li>Code is easier to use for future developers</li>
+  <li>Less presentational HTML means easier design changes</li>
+  <li>Keep the same code for longer periods of time</li>
+  <li>Optimally, never change your code (if all presentation is gone)</li>
+</ul>
+
+<h3>Reduced Development Costs</h3>
+<ul>
+  <li>Shorter development times for style changes</li>
+  <li>CSS based layouts are easier to redesign, superior to HTML table layouts</li>
+  <li>Easier to integrate with CMS (Content Management System) tools</li>
+</ul>
+
+<h3>Special Needs</h3>
+<ul>
+  <li>HTML lends itself to assistive readers (low vision, etc)</li>
+  <li>Can support multiple stylesheets for different user needs</li>
+  <li>An eye-opening exercise: try browsing with Webbie, a browser for the blind</li>
+</ul>
+
+<h3>Single Codebase</h3>
+<ul>
+  <li>No complex sniffing scripts</li>
+  <li>Avoid having to support multiple browsers with multiple home/site pages (code forking)</li>
+  <li>Much less upkeep (only one source to update)</li>
+</ul>
+
+<h3>Moving Forward</h3>
+<ul>
+  <li>Making the most of the elements you have control over</li>
+  <li>jQuery ease of use! The better your HTML elements, classes and IDs, the easier it will be to access using jQuery</li>
+</ul>
+
+<h2>Standards Development</h2>
+
+<p>There are a few things that bear remembering…</p>
+
+<h3>File names</h3>
+
+<ul>
+  <li>file and folder names should never contain
+    <ul>
+      <li>capital letters</li>
+      <li>spaces, or;</li>
+      <li>
+        <table>
+          <tbody>
+            <tr>
+              <td>special characters such as ! @ # $ % ^ &amp; * ( ) + { } [ ] : ; “ &lt; &gt; ?</td>
+            </tr>
+          </tbody>
+        </table>
+      </li>
+    </ul>
+  </li>
+  <li>acceptable non-alphanumeric characters: . _ - ~</li>
+</ul>
+
+<h3>Auto-render pages</h3>
+
+<ul>
+  <li>simple default page: <strong>index.htm</strong>, <strong>index.html</strong> or <strong>index.shtml</strong> (or whatever your server default is)</li>
+</ul>
+
+<h3>File management</h3>
+
+<ul>
+  <li>including an index.html file in every folder on your server will ensure users cannot go snooping around your filesystem</li>
+  <li>the index.html file can be a blank HTML page if you like, as long as the user does not see a list of files when they request a folder
+    <ul>
+      <li>Tip: Unix-style system developers can just use:</li>
+      <li><em>touch index.html</em></li>
+    </ul>
+  </li>
+</ul>
+
+<h3>Browser caching</h3>
+
+<p>Browser caching can reduce excessive request/response transactions between client and server. However, some browsers may cache things like the CSS, so if the styles have changed since caching the client may not get the latest styles.
+Shift + Reload, or Ctrl + F5 (Cmd + F5 for Mac) will force a page reload, but what if you users don’t think to do so?</p>
+
+<p>Solution:</p>
+
+<ul>
+  <li>if a file name has changed, the browser will have to make a new request from the server. Versioning your file names will ensure users always have the latest version of any file (for example styles_1.0.css, styles_1.1.css, styles_1.2.css, styles_2.0.css etc)</li>
+  <li>Query strings for CSS can also help to defeat caching as this will force a new load: styles.css?v1.2</li>
+  <li>if there are files/pages on your server no longer being used, be sure to either remove them or locate them in a place where users are not going to accidentally find them</li>
+</ul>
+
+<h2>Semantic Markup</h2>
+
+<p>As important as Standards-based development, Semantics played a huge part in the development of HTML5 and are here to stay.</p>
+
+<p>They can also play a big part in your site being indexed successfully by some of the largest search engines out there.</p>
+
+<h3>What is Semantic Markup?</h3>
+
+<p>Semantic markup is using the best tags that describe your content appropriately, and arranging your content in a hierarchy to group content together logically.</p>
+
+<ul>
+  <li>Practice of organizing your content into a hierarchy</li>
+  <li>Using appropriate tags for the content</li>
+  <li>H1 … 6 tags for summary headings</li>
+  <li>UL tags for unsorted, unranked, related points</li>
+  <li>OL tags for sorted, ranked, related points</li>
+  <li>Paragraph tags instead of double BR tags</li>
+  <li>CSS instead of FONT</li>
+  <li>HTML tables used for semantic value (tabular data), not for layouts</li>
+</ul>
+
+<blockquote>
+  <p>Key Concept: Separate Content (HTML) from Presentation (CSS)</p>
+</blockquote>
+
+<h3>Building Content Relationships</h3>
+
+<p>Use appropriate tags for headings, content, sub-content, and lists, as this builds a relationship that descends from the title of the page.</p>
+
+<p>Each group of content is a discrete piece of information bounded by headings, which relate to following paragraphs.</p>
+
+<h3>Logical vs. Physical Styles</h3>
+
+<p>The difference between logical and physical styles is hard to see. They display identically in browsers, but are fundamentally different.</p>
+
+<blockquote>
+  <p>Key concept: Physical styles define what content looks like, logical styles define what content is</p>
+</blockquote>
+
+<ul>
+  <li>Logical styles are important for screen readers, physical styles are not</li>
+  <li>Given a choice, logical styles are usually preferred</li>
+  <li>Some <strong>physical</strong> styles:
+    <ul>
+      <li>b - Bold</li>
+      <li>i - Italic</li>
+      <li>s - Strikethrough</li>
+      <li>u - Underline</li>
+      <li>font tags</li>
+    </ul>
+  </li>
+</ul>
+
+<h4>Logical Styling</h4>
+
+<ul>
+  <li>Best way to markup content for long-term usage</li>
+  <li>Use CSS to change style (and some behaviour)</li>
+  <li>Use JS to change behaviour</li>
+  <li>Some logical styles:
+    <ul>
+      <li>code - Code sample</li>
+      <li>kbd - Keyboard entry</li>
+      <li>samp - Programming sample</li>
+      <li>var - Variable</li>
+      <li>cite - Citation</li>
+      <li>dfn - Definition</li>
+      <li>abbr - Abbreviation</li>
+      <li>acronym - Acronym</li>
+      <li>del - Deleted text</li>
+      <li>ins - Inserted text</li>
+    </ul>
+  </li>
+</ul>
+
+<h4>Key Advantages</h4>
+
+<ul>
+  <li>Extracting important pieces of information is simple (CITE or CODE tags for example)</li>
+  <li>Search engine optimization (SEO)</li>
+  <li>Big win for jQuery</li>
+  <li>RSS readers scraping content</li>
+  <li>In-browser “focus” applications</li>
+  <li>Assistive Screen reader friendly</li>
+</ul>
+</section>
+
+<section>
+<h2>Prerequisites</h2>
+<p>While there is plenty of individual homework to do, there will be several team oriented exercises in this class. Be sure to build pages you are proud of, and be ready and willing to share the them with your colleagues.</p>
+
+<p>All COMP1950 students must verify they are capable of connecting to their course webspace via FTP. Students are expected to be fluent with the use of FTP, so be sure to remember your connectivity information.</p>
+
+<p>Reminder: <a href="/studentpages">Details on Student Pages</a></p>
+
+<h2>COMP1950 Best Practices</h2>
+
+<ul>
+  <li>Get acquainted with a browser based developer tool(s). they are crucial to making your development more efficient and effective.</li>
+  <li>Suggestion is Firefox, but Chrome, Safari are also great tools. IE development tools are not as well known, use at your own risk.</li>
+  <li>Practice standards based development at all times:
+    <ul>
+      <li>encourage user trust by building pages that are coherent and well presented</li>
+      <li>facilitate accessibility options for the disabled</li>
+    </ul>
+  </li>
+  <li><strong>HTML</strong>: used for describing the semantics and structure of page content</li>
+  <li><strong>CSS</strong>: used for applying presentation rules (colors, fonts, content location/position)</li>
+  <li><strong>Javascript</strong>: enables page behavior, response to user interactions
+recognize that only structuraly valid code can be expected to operate predictably</li>
+  <li><a href="https://validator.w3.org">W3C HTML validator</a></li>
+  <li><a href="https://jigsaw.w3.org/css-validator/">W3C CSS validator</a></li>
+</ul>
+
+<p>There will be challenges in class as well as open and closed book quizzes.</p>
+</section>
+<h2>Homework</h2>
+
+<p>Homework will <em>ALWAYS</em> be due at 12:00pm Noon the day before the next class.  For those who are challenged by calendars, this means that you must have your homework uploaded to your Student Page by Noon on Mondays.</p>
+
+<p>If you do not have your homework up in time, it will be marked as incomplete and you will receive no feedback.  However, you are encouraged to complete your homework anyway, as you will receive a mark at the end of the term for the entirety of your assignments.</p>
+
+			
+			
+		      
+		    </div>
+		</div>
+	    </div>
+	</div>
+</div>
+
+<!--
+
++++++++++++++++++++++++++++
++++++++++++++++++++++++++++
++++++++++++++++++++++++++++
+
+
++++++++++++++++++++++++++++
+ 
+
+WEEK 2
+
+
++++++++++++++++++++++++++++
+
+
++++++++++++++++++++++++++++
++++++++++++++++++++++++++++
++++++++++++++++++++++++++++
+
+-->
+
+
+
+<!--headers-->
+    
+   <div class="section values4">
+    <div class="container">
+      <div class="row">
+        <div class="nine column value">
+          <h1 class="value-heading2">Week 2</h1>
+	  <img id="logo" alt="logo" src="images/bcit-logo.png">
+	    <p class="value-description2">COMP 1950 - Web Development and Design 2</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+<!--CONTENT-->	
+
+<div class="container">
+	<div class="row">
+	    <div class="nine columns">
+		<div id="main_content">
+		    <div class="page">
+			<h1 class="page-title">Week 2</h1>
+  <p>HTML, SEO and an intro to CSS</p>
+
+<section>
+<h2>HTML5</h2>
+
+<p>HTML was born out of frustration with languishing XHTML2 development, which went on for <em>years</em> after XHTML 1.0 debuted.</p>
+
+	<ul>
+	  <li>The last official spec of XHTML had come in 2000 and by 2005, there was little forward movement, with the development bogged down in committees and problems reaching consensus</li>
+	  <li>There were two distinct camps: Strict and Non Strict (overly simplified terms)</li>
+	  <li>After a series of decisions against a more forgiving, backward compatible version, a number of HTML Working Group members created their own group: WHATWG</li>
+	  <li>After 3 years, Web Applications 1.0 gained considerable momentum when Mozilla, Apple and Opera joined the Working Group and requested that it become part of the W3C’s HTML Working Group</li>
+	  <li>In 2007, the W3C HTML working group adopted the development, renamed it HTML5 (a successor to HTML 4.01) and released a Public Working Draft in 2008</li>
+	  <li>As of today, HTML5 is a Living Standard, and is now just called HTML</li>
+	</ul>
+
+<h3>The basics of HTML5</h3>
+
+<p>Some of the most important parts of HTML5 are:</p>
+
+<ul>
+  <li>Backwards compatible - there will be an attempt to make the system compatible</li>
+  <li>XML can be included as a markup language from within HTML5</li>
+  <li>Ultra simple Doctype:</li>
+</ul>
+
+<figure>!DOCTYPE html</figure>
+
+<p>One of the guiding principles: <strong>Semantic Coding</strong> - giving meaning to your content with your code.</p>
+
+<p>While these may seem insignificant, but they are great strides forward.</p>
+
+<p>Some of the most common new elements:</p>
+
+<p>This a tag representing a document or application section:</p>
+
+<figure>&lt;section&gt;</figure>
+
+<p>This tag is an independent piece of content in a document:</p>
+
+<figure><pre><code class="language-html" data-lang="html"> 	<span class="nt">&lt;article&gt;</span>
+ </code></pre></figure>
+
+<p>For content “only slightly” related to the content:</p>
+
+<figure><pre><code class="language-html" data-lang="html"> 	<span>&lt;aside&gt;</span></code></pre></figure>
+
+<p>Used for the header or footer on a page:</p>
+
+<figure><pre><code data-lang="html"> 	<span>&lt;header&gt;</span> or <span class="nt">&lt;footer&gt;</span>
+ </code></pre></figure>
+
+<p>Represents an area for navigation:</p>
+
+<figure><pre><code class="language-html" data-lang="html"> 	<span class="nt">&lt;nav&gt;</span>
+ </code></pre></figure>
+
+<p>For when you want to include an element that is related to the content in an image, sound, video or other:</p>
+
+<figure><pre><code  data-lang="html"> 	<span>&lt;figure&gt;</span>
+ </code></pre></figure>
+
+<p>Remember that this tag is associated with figure in order to apply some text meaning:</p>
+
+<figure><pre><code  data-lang="html"> 	<span>&lt;figcaption&gt;</span>
+ </code></pre></figure>
+
+<p>Some additional tags that will continue to refine what will be possible with HTML5:</p>
+
+<ul>
+  <li>audio</li>
+  <li>video</li>
+  <li>embed</li>
+  <li>time</li>
+  <li>canvas</li>
+</ul>
+
+<p>Input elements will also have new attributes that allow for greater form functionality:</p>
+
+<ul>
+  <li>datetime</li>
+  <li>date</li>
+  <li>month</li>
+  <li>week</li>
+  <li>time</li>
+  <li>number</li>
+  <li>email</li>
+  <li>url</li>
+  <li>search</li>
+  <li>color</li>
+</ul>
+
+<p>There are a huge list of additional attributes that have changed, allowing for considerable agility with web development</p>
+
+<p>There are a large number of attributes that have been removed, such as:</p>
+
+<ul>
+  <li>align</li>
+  <li>background</li>
+  <li>border</li>
+  <li>height</li>
+  <li>size</li>
+  <li>type</li>
+  <li>width</li>
+</ul>
+
+<p>The bottom line is that almost everything presentation-based has been removed.</p>
+
+<h3>A word on main</h3>
+
+<p>The new tag &lt;main&gt; is worth discussing, as it works a little different and it’s important to understand it’s function properly.</p>
+
+<ul>
+  <li>The main tag was created to indicate to browsers and screen readers where the primary content of the page begins and ends</li>
+  <li>The main tag can take styling, so you can use it as a container or hook for various styles</li>
+  <li>Group content across multiple sections</li>
+</ul>
+
+<h3>In review</h3>
+
+<ul>
+  <li>Tags used in HTML are exactly the same as in previous versions</li>
+  <li>Can be used with CSS</li>
+  <li>Used instead of classes or IDs</li>
+  <li>When to use what tag? Let’s check out a <a href="http://html5doctor.com/downloads/h5d-sectioning-flowchart.pdf">flowchart of HTML5 tags</a></li>
+</ul>
+
+<h3>Resources for HTML5</h3>
+
+<ul>
+  <li>How much of HTML5 does your browser support? Desktop vs Tablet vs Smartphone? Try the <a href="http://html5test.com">HTML5Test</a></li>
+  <li><strong>Book:</strong> <a href="http://books.alistapart.com/products/html5-for-web-designers">HTML5 for Web Developers</a> by Jeremy Keith</li>
+  <li><strong>Book:</strong> <a href="http://introducinghtml5.com/">Introducing HTML5</a> by Bruce Lawson and Remy Sharp</li>
+  <li><strong>Online:</strong> <a href="http://diveintohtml5.info/">Dive into HTML5</a> by Mark Pilgrim</li>
+</ul>
+</section>
+
+<section>
+<h2>Exercise: HTML5</h2>
+
+<p>Thinking about the semantic tags that are available in HTML5, construct a simple page that takes advantage of some of these tags.</p>
+
+<p>We will use the theme of craft beer. Create the name of your own brewery and find <a href="https://www.google.com/search?site=&amp;tbm=isch&amp;tbm=isch&amp;q=craft+beer">an image or two of beer</a> from the interwebs.</p>
+
+<p>The goal is to create a page <em>quickly</em> that contains the following:</p>
+
+<ul>
+  <li>Name of your brewery</li>
+  <li>A description of your brewery (20 words or so)</li>
+  <li>A list of three beers, which should include:
+    <ul>
+      <li>Beer name</li>
+      <li>Beer style (IPA, Pilsner, Stout, Pale Ale, etc)</li>
+      <li>Image</li>
+      <li>Description</li>
+      <li>More Info link (doesn’t have to go anywhere, just create the link)</li>
+    </ul>
+  </li>
+  <li>Links to three pages (You don’t have to create the pages if you don’t want - just the links)
+    <ul>
+      <li>About</li>
+      <li>Brewery Tour</li>
+      <li>Contact</li>
+    </ul>
+  </li>
+  <li>Footer on each page with:
+    <ul>
+      <li>Copyright year and name</li>
+      <li>Link to email</li>
+      <li>Link to Twitter (link to any account, or use my <a href="http://twitter.com/bzzrs">Sleepy Beer</a> )</li>
+    </ul>
+  </li>
+</ul>
+
+<p>Your layout can be basic, it doesn’t have to be anything special, this is more about using HTML5 tags than it is making it look pretty.</p>
+
+<p>Once you’re done, we will take a look at some HTML5 options and compare it to what you have accomplished.</p>
+
+<h2>Example Review: HTML5</h2>
+
+<p>Let’s take a look at the example beer page and HTML5 tag options.</p>
+</section>
+
+<section>
+<h1>SEO Basics</h1>
+
+<h2>Search Engine Optimization</h2>
+
+<p>SEO ties into both semantics and standard very closely</p>
+
+<p>Long gone are the days of SEO shady practices like stuffing pages or cloaking in order to achieve positive results.</p>
+
+<p>Today, most search engine algorithms are so well developed, that the best policy: <strong>well marked up content!</strong></p>
+
+<h2>Great documents on SEO</h2>
+
+<p>Google’s own <a href="http://static.googleusercontent.com/external_content/untrusted_dlcp/www.google.com/en//webmasters/docs/search-engine-optimization-starter-guide.pdf">Search Engine Optimization guide</a></p>
+
+<p>Search Engine Land has produced the <a href="http://searchengineland.com/download/seotable/SearchEngineLand-Periodic-Table-of-SEO.pdf">Periodic Table of Search Engine Optimization</a></p>
+
+<h2>Best Practices</h2>
+
+<p>Here are some of the best practices for proper markup and site design for optimal SEO:</p>
+
+<h3>Page Titles</h3>
+<ul>
+  <li>Super important - yet few people spend enough time on them</li>
+  <li>Encapsulate each page on your site very briefly &amp; include company info</li>
+  <li>Titles are used in results, so be sure they are descriptive and brief</li>
+  <li>Meta Description is used, Meta Keywords are not</li>
+  <li>Descriptions are the content users see in many search engines. Be accurate and descriptive, but be sure to summarize the content on the page</li>
+</ul>
+
+<h3>URL Structure</h3>
+
+<ul>
+  <li>Like previous items, having descriptive URLs is a matter of proper site design</li>
+  <li>When URLs make sense, users (and many engines) find it easier to determine the content and the hierarchy</li>
+  <li>Use actual words in URLs when you can. /url?ejamcirkanfmnadcmgnskd is not very descriptive. /products/vacations/specials is better</li>
+  <li>Site structure plays a big part here</li>
+</ul>
+
+<h3>Content</h3>
+
+<p>Content within your site is one of the biggest elements that you get ranked on. Be sure it is accurate and reflects the other elements like Meta Description, Title and any headings.</p>
+
+<ul>
+  <li>Content should be easy to read and on-topic as much as possible</li>
+  <li>Having updated, or “fresh” content can improve your site: blog/news/updated info</li>
+  <li>Contextual linking is very important! Descriptive, concise and easy to understand</li>
+  <li>Heading tags, as with other logical tags, should be used to accurately describe content</li>
+  <li>Don’t use all headings! Opposite effect can happen</li>
+</ul>
+</section>
+
+<section>
+<h1>CSS Review</h1>
+
+<p>I am not going the the beginning of CSS - you will all know that by now.  Let’s look at ensuring you understand the building blocks for CSS layouts and responsive, which we will cover next week.</p>
+
+<h2>Referencing CSS</h2>
+
+<p>Aside from inline CSS (generally a bad idea) and embedded (better, but not scalable), there is external CSS.  Consider this to be the primary way you will reference your CSS from now on.</p>
+
+<h3>Considerations</h3>
+
+<p>When linking to external style sheets, a few things to keep in mind:</p>
+
+<figure><pre><code data-lang="html">	<span>&lt;link</span> <span>href=</span><span>"/css/stylesheet.css"</span> <span>title=</span><span>"Main style"</span> <span>media=</span><span class="s">"screen"</span> <span class="nt">/&gt;</span></code></pre></figure>
+
+<ul>
+  <li>Within HTML5, you no longer need  <code>rel="stylesheet"</code></li>
+  <li>Each stylesheet should have a <code class="inline">title</code> attribute inside of it</li>
+  <li>The title tag allows the user to select different styles if required</li>
+  <li>This is the genesis of how Responsive Web Design works: switching/combining stylesheets</li>
+  <li>Multiple stylesheets can be loaded (main.css, fonts.css, layout.css, etc)</li>
+  <li>Each stylesheet requires it’s own link tag, or use @import to load other sheets</li>
+</ul>
+
+<h3>Media variations</h3>
+
+<ul>
+  <li>media=”type” is the essence of responsive via a query in the media type (more next week)</li>
+  <li>Examples of supported types: all, aural, braille, embossed, handheld, print, projection, screen, tty, tv</li>
+  <li>Most are not commonly supported, but ones that you will see often: all, screen, print</li>
+  <li>Almost all browsers use the ‘print’ sheet to render text and elements for when the user selects a page to print</li>
+  <li>This can be extremely valuable for when you have a lot of page information that you might not want to have show up on a printout (ie: navigation)</li>
+</ul>
+
+<h3>Alternate sheets</h3>
+
+<ul>
+  <li>To specify an alternate stylesheet, use: <code>rel="alternate stylesheet"</code> within the link element:</li>
+</ul>
+
+<figure><pre><code data-lang="html">	<span>&lt;link</span> <span>rel=</span><span>"alternate stylesheet"</span> <span>href=</span><span>"styles.css"</span> <span>media=</span><span>"screen"</span> <span>title=</span><span>"Main Styles"</span><span>&gt;</span></code></pre></figure>
+
+<p><em>Tip: If you have multiple sheets that belong to one “look” make sure they all have the same title name</em></p>
+
+<ul>
+  <li>An example would be to create a ‘Larger Text’ style sheet with everything in a larger font, or an alternate sheet for a special event</li>
+  <li>Made famous by <a href="http://www.csszengarden.com">CSS Zen Garden</a></li>
+</ul>
+
+<h3>Using @import and @media</h3>
+
+<ul>
+  <li>In your code and stylesheets, you can call other stylesheets with @import</li>
+  <li>A great place to be able to manage your CSS, by using @import to create a “CSS Loader” page</li>
+</ul>
+
+<h4>Example:</h4>
+
+<p>To use a CSS Loader, from your main document:</p>
+
+<figure><pre><code data-lang="html">	<span>&lt;link</span> <span class="na">href=</span><span>"styles.css"</span> <span>media=</span><span>"screen"</span> <span>title=</span><span>"Main Styles"</span><span>&gt;</span></code></pre></figure>
+
+<p>Now, in the body of the styles.css file, import as many files as you need:</p>
+
+<figure><pre><code data-lang="css"><span>@import</span> <span>url(type.css)</span><span>;</span>
+<span>@import</span> <span>url(nav.css)</span><span>;</span>
+<span>@import</span> <span>url(template.css)</span><span>;</span>
+<span>{</span><span>Any</span> <span>other</span> <span>CSS</span> <span>Styles</span><span>}</span></code></pre></figure>
+</section>
+
+<section>
+<h2>CSS Reset</h2>
+<p>Is all CSS deployed the same on every browser?  No.</p>
+
+<p>One of the best ways to get all browsers to react similarly is to use something like a <strong>CSS Reset</strong></p>
+
+<ul>
+  <li>CSS stylesheet that instructs browser to set all elements to predictable values</li>
+  <li>This is one of the best ways to get closer to cross-browser compatibility!</li>
+  <li>Content is now predictable in most every browser</li>
+  <li>Minimizes odd behaviour in rendering</li>
+  <li>Easy to create custom rules for CMS-controlled sites</li>
+  <li>There are some excellent resets out there, a few of the better ones:</li>
+</ul>
+
+<h3>Get reset</h3>
+
+<ul>
+  <li>Eric Meyer’s <a href="http://meyerweb.com/eric/tools/css/reset/">Reset CSS</a> was the original, now in it’s second version</li>
+  <li>HTML5 Doctor’s <a href="http://html5doctor.com/html-5-reset-stylesheet/">Reset Stylesheet</a> is geared toward HTML5 with some slight differences from Meyer’s</li>
+  <li>An innovative approach is <a href="http://necolas.github.io/normalize.css/">normalize.css</a></li>
+  <li>
+    <ul>
+      <li>Doesn’t just reset, but takes advantage of some of the built-in features of various tags</li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li>Actually corrects bugs rather than just resetting everything</li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li>Used by HTML5 Boilerplate</li>
+    </ul>
+  </li>
+</ul>
+
+<h3>Using CSS Resets</h3>
+
+<ul>
+  <li>Works just like any other CSS you link to</li>
+  <li>Can work embedded as well</li>
+  <li><strong>Note:</strong> use before any other stylesheets!</li>
+</ul>
+</section>
+
+<section>
+<h1>CSS Selectors</h1>
+
+<p>Other than basic Element, Class, and ID selectors, there are many more that allow you to really present your content. Knowing how they work is critical to creating modern layouts and presentation.</p>
+
+<h2>Successful CSS: General to Specific</h2>
+
+<p>With CSS, it’s always best to create your generic/basic rules first, with your more specific selectors coming later. This is primarily because of “specificity”:</p>
+
+<h3>Specificity</h3>
+
+<p>This is the ranking system used within CSS to ensure there are never any rules that collide and the browser is unsure what to do.</p>
+
+<p>Here is how the W3C defines the process by which style order is determined:</p>
+
+<ul>
+  <li><strong>Discover all declarations:</strong> Find all declarations that apply to the element and property in question, for the target media type. Declarations apply if the associated selector matches the element in question.</li>
+  <li><strong>Sheet Order:</strong> The primary sort of the declarations is by weight and origin: for normal declarations, author style sheets override user style sheets which override the default style sheet.
+Note: For “!important” declarations, user style sheets override author style sheets which override the default style sheet. “!important” declaration override normal declarations. Also, imported stylesheets have the same origin as the style sheet that imported it.</li>
+  <li><strong>Specificity:</strong> The secondary sort is by specificity of selector: more specific selectors will override more general ones. Pseudo-elements and pseudo-classes are counted as normal elements and classes, respectively.</li>
+  <li><strong>Sort by Order:</strong> Finally, sort by order specified: if two rules have the same weight, origin and specificity, the latter specified wins. Rules in imported style sheets are considered to be before any rules in the style sheet itself.</li>
+</ul>
+
+<p>All of the rules are pretty straightforward, except for Specificity, which bears some explanation:</p>
+
+<p>Specificity is a method for determining what rules are applied when a conflict between two selectors occurs. Through a method of <em>concatenating</em> values when certain elements and selectors are present, a specificity number can be applied to any CSS rule. The one with highest specificity wins and the associated rule is applied to the element(s) in question.</p>
+
+<h3>Mnemonic to remember: ICE</h3>
+
+<ul>
+  <li>Count the number of <strong>IDs</strong> in the selector.</li>
+  <li>Count the number of <strong>Classes</strong> in the selector.</li>
+  <li>Count the number of <strong>Elements</strong> in the selector.</li>
+</ul>
+
+<p>Now, write the three numbers in the above order with no spaces or commas to obtain a three digit number. The final  number is a concatenation of the three and results in a specificity number used to “rank” selectors. Higher numbers win out over lower numbers.</p>
+
+<p>Following is a list of selectors sorted by specificity:</p>
+
+<figure><pre><code data-lang="css"><span>#id1</span>
+<span>/* I=1 C=0 E=0 --&gt; 100 */</span>
+
+<span>ul</span> <span class="nt">ul</span> <span class="nt">li</span><span class="nc">.red</span>
+<span>/* I=0 C=1 E=3 --&gt; 013 */</span>
+
+<span>li</span><span class="nc">.red</span>
+<span>/* I=0 C=1 E=1 --&gt; 011 */</span>
+
+<span>li</span>
+<span>/* I=0 C=0 E=1 --&gt; 001 */</span></code></pre></figure>
+
+<h4>!Important rule</h4>
+
+<p>This declaration, when added to a rule, will override almost all other declarations.</p>
+
+<p>It indicates that this rule should take over any previous rules that might govern a specific element.
+This rule can cause havoc if overused, as it will overrule any other declaration with the same selector. <strong>Be careful with !important</strong></p>
+
+<h3>Grouping selectors</h3>
+
+<ul>
+  <li>To apply the same style to a multitude of different selectors, you can group them with the comma:</li>
+</ul>
+
+<figure><pre><code class="language-css" data-lang="css">	<span>h1</span><span>,</span> <span>h2</span><span>,</span> <span>h3</span><span>,</span> <span>h4</span><span>,</span> <span>h5</span> <span>{</span> <span>color</span><span>:</span> <span>red</span><span class="p">;</span> <span class="p">}</span></code></pre></figure>
+
+<ul>
+  <li>This can be done with Elements, classes and IDs</li>
+  <li>Build specific rules for any individual items</li>
+  <li>Grouping can also be used in html class attributes</li>
+</ul>
+
+<figure><pre><code data-lang="html">	<span>&lt;p</span> <span>class=</span><span>"cool wicked"</span><span>&gt;</span>	</code></pre></figure>
+
+<ul>
+  <li>Will set this paragraph to have both the cool and wicked classes</li>
+  <li>Order is irrelevant</li>
+  <li>Case is important! Remember to use a single rule for CSS naming and stick with it</li>
+</ul>
+
+<h3>Selectors</h3>
+
+<p>Let’s look at some different selectors:</p>
+
+<h3>Pseudo-classes</h3>
+
+<p>A Pseudo-class is a selector that allows you to reference a specific action or attribute of an element. This is most often used when specifying a attributes, such as :visited and :link.</p>
+
+<p>There are other uses for pseudo elements, that will allow for greater detail in styling content, such as :first-letter and :first-line. These allow the browser to apply a style based on an unselected, but displayed element.</p>
+
+<p>Best part: No span or div required to access these pseudo-elements.</p>
+
+<p>Most commonly used in links, but order is important:</p>
+
+<ul>
+  <li>Link</li>
+  <li>Visited</li>
+  <li>Hover</li>
+  <li>Active</li>
+</ul>
+
+<p>Can you tell me why?</p>
+
+<p>Easy mnemonic: <strong>LVHA</strong> - <strong>L</strong>o<strong>V</strong>e - <strong>HA</strong>te</p>
+
+<h3 id="universal-selector">Universal Selector</h3>
+
+<ul>
+  <li>This is a fairly widely supported selector: the asterisk *</li>
+  <li>Use it to specify a global rule</li>
+</ul>
+
+<figure><pre><code data-lang="css">	<span>*</span> <span>{</span> <span>color</span><span>:</span> <span>red</span><span>;</span> <span>}</span></code></pre></figure>
+
+<ul>
+  <li>This will make all font color red on your page</li>
+  <li>The universal selector can be very powerful, as it can command a lot of changes to your styles, but it can be  expensive from a processing point of view</li>
+</ul>
+
+<h3>Descendant Selectors</h3>
+
+<ul>
+  <li>Separated by a space, the last element being the key one</li>
+  <li>In this rule:</li>
+</ul>
+
+<figure><pre><code data-lang="css">	<span>h1</span> <span>em</span> <span>{</span><span>font-weight</span><span>:</span> <span>bold</span><span>;}</span></code></pre></figure>
+
+<ul>
+  <li>The <code>em</code> is the only tag that will acquire the effect</li>
+  <li>Rules are read <em>right-to-left</em></li>
+  <li>Match all the right-most elements then all the ones to the left</li>
+  <li>In a large DOM, this can take a while</li>
+  <li>Can have multiple descendants</li>
+  <li>Great for specifying different styles when they apply only in certain areas:</li>
+</ul>
+
+<figure><pre><code data-lang="css">	<span>nav</span> <span>a</span> <span>{</span> <span>color</span><span>:</span> <span>silver</span><span>;</span> <span>}</span></code></pre></figure>
+
+<ul>
+  <li>The links will only appear silver within <code>nav</code> tags</li>
+</ul>
+
+<h3>Child Selectors</h3>
+
+<ul>
+  <li>Uses the &gt; combinator to specify children</li>
+  <li>Will select an element that is directly descended from another element</li>
+  <li>The following rule:</li>
+</ul>
+
+<figure><pre><code data-lang="css">	<span>p</span> <span>&gt;</span> <span>strong</span> <span>{</span><span>color</span><span>:</span> <span>red</span><span>;</span> <span>}</span></code></pre></figure>
+
+<ul>
+  <li>Only <code>strong</code> tags that are the child tag from the <code>p</code> will match</li>
+  <li>Will not select a strong tag embedded in any other tag</li>
+</ul>
+
+<h3>Attribute Selectors</h3>
+
+<ul>
+  <li>Select elements by what the element contains as attributes</li>
+  <li>The method is:</li>
+</ul>
+
+<figure><pre><code data-lang="css">	<span>element</span><span>[</span><span>attribute</span><span>=</span><span>value</span><span>]</span> <span>{</span> <span>...</span> <span>CSS</span> <span>Rules</span> <span>...</span> <span class="p">}</span></code></pre></figure>
+
+<ul>
+  <li>If you specify an attribute with no value, you will match any element that simply has the attribute present (no matter what it’s value is).  Example:</li>
+</ul>
+
+<figure><pre><code data-lang="css">	<span>img</span><span>[</span><span>alt</span><span>]</span> <span>{</span><span>border</span><span>:</span> <span>1px</span> <span>solid</span> <span>red</span><span>;}</span></code></pre></figure>
+
+<ul>
+  <li>This will draw a 1px red border around any img with an alt attribute (regardless of what is in the attribute itself)</li>
+  <li>You can use an attribute selector to find specific content:</li>
+</ul>
+
+<figure><pre><code data-lang="css">	<span>header</span><span>[</span><span>role</span><span>=</span><span>"</span><span>banner</span><span>"</span><span>]</span> <span>{</span> <span class="nl">background</span><span class="p">:</span> <span class="no">red</span><span class="p">;}</span></code></pre></figure>
+
+<ul>
+  <li>You can further direct an attribute selector to match on partial attributes</li>
+  <li>
+    <ul>
+      <li><code>^=</code> The carat will find content at the beginning</li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li><code>*=</code> The asterisk will find content at the beginning</li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li><code>$=</code> The dollar will find content at the beginning</li>
+    </ul>
+  </li>
+  <li>An example:</li>
+</ul>
+
+<figure><pre><code data-lang="css">	<span>a</span><span>[</span><span>href</span><span>$</span><span>=</span><span>"</span><span>.shtml</span><span>"</span><span>]</span> <span>{</span> <span>color</span><span>:</span> <span>olive</span><span>;</span> <span>}</span></code></pre></figure>
+
+<ul>
+  <li>This will find any anchors that contain an href attribute whose content ends in <code>.shtml</code></li>
+  <li>Another example:</li>
+</ul>
+
+<figure><pre><code data-lang="css">	<span>div</span><span>[</span><span>class</span><span>^=</span><span>"</span><span>box-</span><span>"</span><span>]</span> <span>{</span> <span>border</span><span>:</span> <span>1px</span> <span>solid</span> <span>red</span><span class="p">;</span> <span class="p">}</span></code></pre></figure>
+
+<ul>
+  <li>This will draw a 1px solid red box around all <code>div</code> tags with a class that <em>starts</em> with <code>box-</code></li>
+</ul>
+</section>
+
+<section>
+<h2>Size measurements</h2>
+
+<ul>
+  <li>px - Pixels is one of the most common measuring types. It is specific to computers, as it renders based on the pixel-display of all monitors. Great for specific measurements on boxes and borders, but for fonts, it can lead to difficulty as some browsers don’t allow scaling and font can end up too small</li>
+  <li>pt - Points is an aold system related to type-setting that had a standard size for points. This is a relative size based on the users’ system</li>
+  <li>em - A relative measurement of the letter “m” in the chosen font. This is a popular one for spacing around text, as it inherits the font dimensions</li>
+  <li>rem - A new measurement system called “root em” that is becoming popular. No longer an issue of compounding errors, the root em will always us the html element for measurement</li>
+  <li>% - Percentage measurements are also very common, but can be problematic when inheritance happens when multiple elements are nested in one another</li>
+  <li>named - This refers to fonts and a few other elements. The named sizes are xx-small, x-small, small, medium, large, x-large, xx-large. They are relative to the browsers base font size</li>
+  <li>Other less used ones: ex, pc</li>
+</ul>
+
+<h2>Color Measurement</h2>
+
+<p>Colors can be specified in a number of ways, corresponding to the system that your organization or visual element requires.</p>
+
+<p>Almost all color systems use a method for expressing a combination of the three color spaces used for displaying colors on computer monitors: Red Green and Blue.</p>
+
+<ul>
+  <li>Hex: #003366 - One of the most common systems, it combines 2 digits each for Red Green and Blue. Each hex pair stand stands for digits between 00 and FF in hexadecimal</li>
+  <li>Compact Hex: #f30 - This is almost identical to the Hex version, except that when three numbers are used, most browsers will just double-up each digit. So, #f30 will become #ff3300</li>
+  <li>Named: cornflowerblue - Although the official W3C specification only lists 16 named colors, almost every browser supports the various named colors</li>
+  <li>RGB: rgb(255, 0, 255) - This allows the user to specify the same thing as Hex, but in Decimal format</li>
+  <li>RGBa: rgba(128, 128, 128, 0.5) - Takes an additional argument for <em>alpha</em> or opacity</li>
+  <li>RGB %: rgb(100%, 0%, 50%) - Almost identical to RGB, but with percentages of each color space instead</li>
+</ul>
+
+<h2>CSS Resources</h2>
+
+<ul>
+  <li>Mozilla Development Network <a href="https://developer.mozilla.org/en-US/docs/CSS/CSS_Reference">CSS Reference</a></li>
+  <li>An excellent book on CSS: <a href="http://www.amazon.ca/gp/product/0321643380?ie=UTF8&amp;tag=css-tricks-20&amp;linkCode=as2&amp;camp=1789&amp;creative=390957&amp;creativeASIN=0321643380">Handcrafted CSS</a></li>
+  <li>Another excellent book: <a href="http://www.amazon.ca/gp/product/1430223979/ref=as_li_ss_tl?ie=UTF8&amp;tag=css-tricks-20&amp;linkCode=as2&amp;camp=1789&amp;creative=390957&amp;creativeASIN=1430223979">CSS Mastery</a></li>
+</ul>
+</section>
+<h2>Homework</h2>
+
+<p>Take the beer page you created as the example and apply some styles to it.  Be sure to continue with the HTML5 tags we learned about today, and be sure to validate your page.</p>
+
+<p>For next week, I would like to see:</p>
+
+<ul>
+  <li>All of the content you create under week 2 of your student page</li>
+  <li>Complete the following 4 pages:
+    <ul>
+      <li>Index page</li>
+      <li>About</li>
+      <li>Brewery Tour</li>
+      <li>Contact</li>
+    </ul>
+  </li>
+  <li>A link to the HTML Validator on each page, using a referer link (see notes for this week)</li>
+  <li>Be sure all your pages validate properly</li>
+  <li>Use a CSS reset (any one is fine)</li>
+  <li>Use list items for navigation</li>
+</ul>
+
+
+</div>
+
+		      
+		    </div>
+		</div>
+	    </div>
+	</div>
+</div>
+
+
+<!--headers-->
+   <div class="section values5">
+    <div class="container">	
+      <div class="row">        
+        <div class="nine column value">
+	    <h1 class="value-heading2">Resources</h1>
+	    <img id="logo" alt="logo" src="images/bcit-logo.png">
+	    <p class="value-description2">COMP 1950 - Web Development and Design 2</p>
+        </div>
+      </div>
+    </div>
+  </div>
+   
+   
+<!--RESOURCES-->
+<div class="container">
+	<div class="row">
+	    <div class="nine columns">
+		<div id="main_content">
+		    <div class="page">
+			<h1 class="page-title"><a name="resources"></a>Resouces</h1>			
+			<h4 id="editors">Editors</h4>
+			    <ul>
+			    <li><a href="https://notepad-plus-plus.org">Notepad++</a>
+			    - Text Editor (Win) * installed in BCIT lab computers *
+			    </li>
+			    <li><a href="http://www.sublimetext.com">Sublime Text</a>
+			    - Text Editor (Mac/Win)
+			    </li>
+			    <li><a href="https://panic.com/coda/">Coda</a>
+			    - Web Dev IDE (Mac)
+			    </li>
+			    <li><a href="http://www.adobe.com/ca/products/dreamweaver.html">Dreamweaver</a>
+			    - Web Dev IDE (Mac/Win)
+			    </li>
+			    <li><a href="http://www.barebones.com/products/textwrangler/">Text Wrangler</a>
+			    - Text Editor (Mac)
+			    </li>
+			    <li><a href="http://www.htmlkit.com">HTMLKit</a>
+			    - Web Dev IDE (Win)
+			    </li>
+			    </ul>
+			    <h4>FTP</h4>
+			    <ul>
+			    <li>
+			    <a href="https://filezilla-project.org">Filezilla</a>
+			    - FTP tool (Win) * installed in BCIT lab computers *
+			    </li>
+			    <li>
+			    <a href="https://cyberduck.io/?l=en">Cyberduck FTP</a>
+			    - FTP tool (Mac)
+			    </li>
+			    </ul>
+			    
+			    <h3>Resources for HTML5</h3>
+			    <ul>
+				<li>
+				How much of HTML5 does your browser support? Desktop vs Tablet vs Smartphone? Try the
+				<a href="http://html5test.com">HTML5Test</a>
+				</li>
+				<li>
+				<strong>Book:</strong>
+				<a href="http://books.alistapart.com/products/html5-for-web-designers">HTML5 for Web Developers</a>
+				by Jeremy Keith
+				</li>
+				<li>
+				<strong>Book:</strong>
+				<a href="http://introducinghtml5.com/">Introducing HTML5</a>
+				by Bruce Lawson and Remy Sharp
+				</li>
+				<li>
+				<strong>Online:</strong>
+				<a href="http://diveintohtml5.info/">Dive into HTML5</a>
+				by Mark Pilgrim
+				</li>
+			    </ul>		    
+			
+			    <h3>CSS Resources</h3>
+			    <ul>
+				<li>
+				Mozilla Development Network
+				<a href="https://developer.mozilla.org/en-US/docs/CSS/CSS_Reference">CSS Reference</a>
+				</li>
+				<li>
+				An excellent book on CSS:
+				<a href="http://www.amazon.ca/gp/product/0321643380?ie=UTF8&tag=css-tricks-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=0321643380">Handcrafted CSS</a>
+				</li>
+				<li>
+				Another excellent book:
+				<a href="http://www.amazon.ca/gp/product/1430223979/ref=as_li_ss_tl?ie=UTF8&tag=css-tricks-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=1430223979">CSS Mastery</a>
+				</li>
+			    </ul>
+			
+			<h2>Student Pages</h2>
+			<h3>FTP Client</h3>
+			<p>You can use any FTP program you are comfortable with. There is most likely one installed in the labs (it changes from term to term) but you can download and install any one you want.</p>
+			<p>Filezilla is a great FTP client that works on Mac/PC/Linux if you are looking for one to install on your laptop or at home.</p>
+			<p>If you aren’t knowledgeable with any FTP programs yet, just let me know!</p>
+			<h3>Account details</h3>
+			<p>An account is created for each student that gives them 200MB of space, and a URL they can navigate to.</p>
+			<h3>How to find your URL</h3>
+			<p>Your student page will always be at:</p>
+			<pre>
+			    <code data-lang="html">http://students.thenet.ca/{student-account}</code>
+			</pre>
+			<p>
+			    The {student-account} part is almost always your
+			    <em>first initial</em>
+			    and
+			    <em>last name</em>
+			    . For instance,
+			    <em>John Smith</em>
+			    would end up as
+			    <em>jsmith</em>
+			</p>
+			<h3 id="how-to-ftp-to-your-account">How to FTP to your account</h3>
+			<p>In order to log into your FTP account, you will need:</p>
+			<pre>
+			    <code class="language-html" data-lang="html">Hostname: thenet.ca Username: {student-account}@thenet.ca Password: {whatever you create}</code>
+			</pre>
+			<p>
+			    Please take note that your username
+			    <em>must</em>
+			    end in
+			    <strong>@thenet.ca</strong>
+				for it to work.
+			</p>
+			</div>
+			</div>
+			</div>
+		
+		    </div>
+		</div>
+	    </div>
+	</div>
+</div>
+   
+</body>
+</html>

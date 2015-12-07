@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+
+<title>Template]</title>
+<meta name="font:Main Font" content="" />
+<meta name="color:Page Backgroundt" content="#ffffff" />
+<meta name="color:font color" content="#ffffff" />
+<meta name="color:link color" content="#ffffff" />
+<meta name="color:pagination color" content="#ffffff" />
+<meta name="font:header Font" content="" />
+<link rel="stylesheet" type="text/css" href="http://static.tumblr.com/myialb2/9iQnx9tv1/reset.css">
+<link rel="stylesheet" type="text/css" href="http://static.tumblr.com/myialb2/eFinx9tv0/grid.css">
+<script src ="http://static.tumblr.com/myialb2/8mKnx9y55/jquery.js"></script>
+
+<script>
+    $(document).ready(function()
+    {
+       $("#hideme").click(function(){
+           $("#navigation").hide(2000);
+       });
+       $("#showme").click(function(){
+           $("#navigation").show(2000);
+       });
+       $("#toggleme").click(function(){
+           $("#navigation").toggle(2000);
+       });
+    });
+</script>
+
+
+<style>
+.wraper .header1 header{
+    text-align: center;
+}
+body {
+	font-family: {font:Main Font};
+	background:{color:Page Backgroundt};
+	color:{color:font color};
+}
+.post{
+	font-family:{font:Post Font};
+}
+article header h1{
+	font-family:{font:header Font};
+	font-size: 80%;
+}
+article h4,h5{
+	margin:0;
+	padding-top:3px;
+}
+article h4{
+    font-size:150%;
+}
+nav{
+    text-align: center;
+}
+nav ul{
+    margin:0;
+    padding:0;
+}
+nav ul li{
+	display: inline;
+	padding-right: 20px;
+}
+nav ul li a{
+	display: inline;
+	text-decoration: none;
+	color:{color:link color};
+	font-size: 200%;
+}
+.wraper{
+	width: 80%;
+	margin: auto;
+}
+article header a{
+    text-decoration: none;
+	color:{color:link color};
+}
+article ul li {	
+	text-decoration: none;
+	color:{color:link color};
+	font-size: 100%;
+}
+article ul li a{	
+	text-decoration: none;
+	color:{color:link color};
+	font-size: 100%;
+}
+article ul{	
+	list-style-type: none;
+	padding:0;
+}
+.content{
+    margin:0;
+}
+.pagination{
+    color:{color:pagination color};
+}
+.pagination a{
+    color:{color:pagination color};
+}
+.current_page{
+    color:{color:pagination color};
+}
+.jump_page{
+    color:{color:pagination color};
+}
+
+</style>
+
+</head>
+<body>
+	<div class= "wraper">
+	    <div class="header1">
+    		<header>
+    			<h1>My template: {title}</h1>	
+    			<img src="{PortraitURL-128}"/>
+    			{block:Description}
+    				<h2>{Description}</h2>
+    			{/block:Description}
+    			
+    			<form action="/search" method="get">
+    				<input type="text" name="q" value="{SearchQuery}" />search
+    			</form>
+    	       		{block:SearchPage}
+    					
+    				{block:SearchPage}
+    				
+    			<ul>
+    			 <li id="hideme"><a href="#">hide nav</a></li>
+    			 <li id="showme"><a href="#">show nav</a></li>
+    			 <li id="toggleme"><a href="#">toggle nav</a></li>
+    			</ul>
+    		</header>
+    	</div>
+		<block:HasPages>
+		<nav id="navigation">
+				<ul>
+				<li><a href = "/">Home</a></li>
+				{block:Pages} 
+				<li><a href = "{URL}">{Label} </a></li>
+				{/block:Pages}
+			    <ul>
+		</nav>
+		</block:HasPages>
+		
+		
+		{block:Posts}
+		<article class ="{PostType} post" id = "id-{PostID}">
+			<header>
+					<h5>Author is: {PostAuthorName}</h5>
+				{block:Date}
+					<a href="{Permalink}"><h5>Date is: <time>{Month}{DayOfMonthWithZero},{Year}</time></h5></a>				
+				{/block:Date}
+
+			</header>
+			{block:Text}
+				<h4>{Title}</h4>
+				<div class="content">
+				    {Body}
+				</div>
+				{block:More}
+					<a href="{Permalink}">More...</a>
+				{/block:More}			
+			{/block:Text}
+			{block:Link}
+			<a ref="{URL}">{name}</a>
+			{/block:Link}
+			{block:Photo}
+			<img src="{PhotoURL-500}"/>
+			{/block:Photo}
+			{block:HasTags}
+                <ul class="tags">
+                    {block:Tags}
+                        <li>
+                            <a href="{TagURL}">Tag: {Tag}</a>
+                        </li>
+                    {/block:Tags}
+                </ul>
+            {/block:HasTags}
+		</article><!--/.post.{PostType}-->
+		<br>
+		{/block:Posts}
+		<div class="pagination">
+    		{block:Pagination}
+    		    {block:PreviousPage}
+                    <a href="{PreviousPage}">Previous</a>
+                {/block:PreviousPage}
+                {block:JumpPagination length="3"}
+                    {block:CurrentPage}
+                        <span class="current_page">{PageNumber}</span>
+                    {/block:CurrentPage}
+                    
+                    {block:JumpPage}
+                        <a class="jump_page" href="{URL}">{PageNumber}</a>
+                    {/block:JumpPage}
+                {/block:JumpPagination}
+                {block:NextPage}
+                    <a href="{NextPage}">Next</a>
+                {/block:NextPage}
+            {/block:Pagination}
+		</div>
+		
+		
+		<footer>
+				<p>&copy; {CopyrightYears} {Title}</p>
+		</footer>
+
+
+    <div class = "row2">
+        <block:HasPages>
+	        <div class="container">
+    	        <div class="twelve columns">
+    	            <div class="menu">
+    	                <ul>
+    	                    <li><a href="/">Home</a></li>
+    	                    <block:Pages>
+    	                        <li><a href="{URL}">{Label}</a></li>
+    	                    </block:Pages>
+    	                </ul>
+    	            </div>
+    	        </div>
+	        </div>
+       </block:HasPages>
+	</div>
+
+
+
+
+
+
+
+		
+
+	</div>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
