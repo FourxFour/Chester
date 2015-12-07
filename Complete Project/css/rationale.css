@@ -1,0 +1,73 @@
+/* THIS CREATES THE BUTTON (OUTSIDE) IN THE HAMBURGER*/  
+  
+  .menu{
+    display:block;
+    position:relative;
+    height:0.75em;
+    margin-top:1em;
+    margin-left:.25em;
+    cursor: pointer;
+    
+  }
+/* THIS CREATES THE BUTTON (Inside) IN THE HAMBURGER*/
+  .menu div{
+    position: absolute;
+    left: -1;
+    top: 0.10em;
+    width: 1.5em;
+    height: 0.15em;
+    background: #fff;
+    /*This creates two extra black lines to finish of the HAM MENU*/
+    /*horiz,vert,blur,spread BELOW*/
+    box-shadow: 
+                0 0.25em 0 0 #fff,
+                0 0.5em 0 0 #fff;
+
+  }
+  .menu_links{
+    display:none;
+    text-align:top;
+    list-style-type: none;
+    margin-top:20px;
+
+  }
+  
+  .menu_links li{
+    list-style-type: none;
+    text-decoration:none;
+    border:1px solid gray;
+    width:15rem;
+    background-color: #030303;
+    opacity: 0.6;
+    padding:20px;
+    margin-right:-2px;
+    display:inline;
+   
+  }
+  .menu_links li a{
+     text-decoration:none;
+     padding:5px;
+     font-size: 2rem;
+     color:#fff;
+}
+
+/* unvisited link */
+a:link {
+    color: white;
+}
+
+/* visited link */
+a:visited {
+    color: gray;
+}
+
+/* mouse over link */
+a:hover {
+    color:#37CA56 ;
+}
+
+/******MAIN*****/
+
+.introduction{
+    margin-top: 3rem;
+}
