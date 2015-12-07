@@ -1,0 +1,49 @@
+.rationalePage{
+	text-align: left;
+}
+
+.rationalePage li{
+list-style-type:none;
+}
+
+.ratonalePage p{
+	text-align: center;
+}
+
+.enterNow{
+	float:right;
+	border: 1px solid #fff;
+	width:100px;
+	height: 50px;
+	border-radius: 25px;
+	padding:5px;
+}
+
+.enterNow a{
+	text-align:center;
+	text-decoration: none;
+	float:center;
+}
+.enterNow1{
+	float:right;
+	border: 1px solid black;
+	color:black;
+	width:100px;
+	height: 50px;
+	border-radius: 25px;
+	padding:5px;
+}
+
+}
+
+.enterNow1 a{
+	text-align:center;
+	text-decoration: none;
+	float:center;
+	color:black;
+}
+a{
+	color:black;
+}
+
+
