@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+    <!--
+
+Author: Brett Parr A00798861
+Date: nov.30
+
+-->
+<head>
+    <meta charset="UTF-8">
+    <title>Introduction Page</title>
+		<meta name="description" content="A page created for introducing the students and the final project BCIT's COMP 1950 course. Final project introduction." />
+		<link rel="stylesheet" href="css/normalize.css" title="layout_styles"/>
+        <link rel="stylesheet" href="css/skeleton.css" title="layout_styles"/>
+        <link rel="stylesheet" href="css/protostyles.css" title="layout_styles"/>
+		<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('a[href^="#"]').on('click',function(e){
+                    e.preventDefault();
+                    var target = this.hash;
+                    var $target = $(target);
+        
+                    $('html, body').stop().animate({
+                        'scrollTop': $target.offset().top},900,'swing',function(){
+                            window.location.hash = target;
+                    });
+                });
+            });
+        </script>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="twelve columns">
+<a id="top"></a>
+<h1>Introduction Page</h1>
+	<nav>
+		<ul class= "nav">
+			<li><a href ="#description">Project Description</a></li>
+			<li><a href ="#member1">Song Tao Chen (Chester)</a></li>
+			<li><a href ="#member2">Krista Dayton</a></li>
+			<li><a href ="#member3">Jeff Ballard</a></li>
+			<li><a href ="#member4">Brett Parr</a></li>
+		</ul>
+	</nav>
+			</div>
+		</div><!-- /.row -->
+		<div class="row">
+			<div class="twelve columns">
+<main>
+	<div id="description">
+		<h2>Project Description</h2>
+		<p>Hello! Welcome to Team 4x4's Introduction page for BCIT's COMP 1950 Intermediate Web Developement and Design course homepage.&nbsp; This website was designed as a final project for the course, demonstrating all we have learned throughout the semester. Below you will find a profile for each of the students involved in creating this project and their contributions to the work. We hope you like it!  </p>
+	</div>
+</main>
+			</div>
+		</div><!-- /.row -->
+		<div class="row">
+			<div class="twelve columns">
+<article>
+	<div class = "person1" id="member1">
+<hr>
+		<div class = "imagecontainer">
+			<div class = "personIMG">
+				<img src = "image/my_image.jpg">
+			</div>
+		</div>
+		<div class = "infocontainer">
+			<div class = "personInfo">
+				<p>Name: Song Tao Chen (Chester)</p>
+				<p>About Me: ####</p>
+				<p>Email: schen310@my.bcit.ca</p>
+				<p>Job title: Engineering Technologist</p>
+				<p>Company: Phase Technology</p>
+				<p>Contribution: #####</p>
+			</div>
+		</div>		
+	</div>
+</article>
+			</div>
+		</div><!-- /.row -->
+		<div class="row">
+			<div class="twelve columns">
+<article>
+	<div class = "person2 person1" id="member2">
+<hr>
+		<div class = "imagecontainer">
+			<div class = "personIMG">
+				<img src = "image/my_image.jpg">
+			</div>
+		</div>
+		<div class = "infocontainer">
+			<div class = "personInfo">
+				<p>Name: Krista Dayton</p>
+				<p>About Me: ####</p>
+				<p>Email: ####</p>
+				<p>Job title: ####</p>
+				<p>Company: ####</p>
+				<p>Contribution: #####</p>
+			</div>
+		</div>
+	</div>
+</article>
+			</div>
+		</div><!-- /.row -->
+		<div class="row">
+			<div class="twelve columns">
+<article>
+	<div class = "person3 person1" id="member3">
+<hr>
+		<div class = "imagecontainer">
+			<div class = "personIMG">
+				<img src = "image/my_image.jpg">
+			</div>
+		</div>
+		<div class = "infocontainer">
+			<div class = "personInfo">
+				<p>Name: Jeff Ballard</p>
+				<p>About Me: ####</p>
+				<p>Email: ####</p>
+				<p>Job title: ####</p>
+				<p>Company: ####</p>
+				<p>Contribution: #####</p>
+			</div>
+		</div>
+	</div>
+</article>
+			</div>
+		</div><!-- /.row -->
+		<div class="row">
+			<div class="twelve columns">
+<article>
+	<div class = "person4 person1" id="member4">
+<hr>
+		<div class = "imagecontainer">
+			<div class = "personIMG">
+				<img src = "image/my_image.jpg">
+			</div>
+		</div>
+		<div class = "infocontainer">
+			<div class = "personInfo">
+				<p>Name: Brett Parr</p>
+				<p>About Me: Hi! My name is Brett Parr and I am a student currently enrolled at BCIT. I have very little web development experience, but I very much enjoy learning more and more about web development and design, as my studies continue.&nbsp; A little about myself: I was born in the small town of Bella Coola, British Columbia. It is a beautiful place on the north coast of BC, a town with a population of about 1500. It has some of the best heliskiing and sport fishing locations in the entire world, two activities I love to do when I am not studying or working. I work, study and live in the lower mainland, in beautiful British Columbia. </p>
+				<p>Email: bparr@my.bcit.ca</p>
+				<p>Job title: Student</p>
+				<p>Company: BCIT</p>
+				<p>Contribution: My contribution to this final project has been helping to create the introduction and rationale pages for our COMP 1950 course homepage. I hope you like them!</p>
+			</div>
+		</div>
+	</div>
+</article>
+			</div>
+		</div><!-- /.row -->
+</div>
+</div>
+<a href="#top">[Back to the Top]</a>
+</body>
+</html>
