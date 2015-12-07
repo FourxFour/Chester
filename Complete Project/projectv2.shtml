@@ -1,0 +1,377 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<!--Revised by Jeff Ballard
+	Dec 7th,2015-->
+<head>
+<meta charset="UTF-8">
+<title>final project</title>
+<!-- CSS
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="css/skeleton.css">
+<link rel="stylesheet" type="text/css" href="css/projectv2.css" media ="screen and (min-width:1100px)"/>
+<link rel="stylesheet" type="text/css" href="css/print.css" media= "print"/>
+<link rel="stylesheet" type="text/css" href="css/android.css" media="screen and (max-width:740px)"/>
+<link rel= "stylesheet" type="text/css" href="css/tablet.css" media= "screen and (min-width:740px) and (max-width:1100px)"/>
+<link rel="stylesheet" href="css/rationale.css">
+<link rel="stylesheet" href="css/revised.css">
+
+<style>
+</style>
+	<script src="jquery/jquery-1.11.3.js"></script>
+	<script type="text/javascript" src="jquery/projectv2.js"></script>	
+</head>
+<body>
+	<div class = "wrapper">	
+		<div class ="container">	
+			<div class ="row">				
+					<div class = "twelve columns">
+						<div class = "nav_container">
+							<div class="logo">
+								<img src = "image/icon/logo.jpg" alt="group icon">
+							</div>
+							<div class = "navItem">
+								<ul>
+									<li><a href ="#home">Home</a></li>
+									<li><a href ="#intro">Intro</a></li>								
+									<li><a href ="#rational">Rationale</a></li>	
+									<li><a href ="#prototype">Prototype</a></li>
+									<li><a href ="#blog">Blog</a></li>
+									
+								</ul>
+							</div>
+						</div>
+					</div>					
+				</div>
+			</div>
+		</div>	
+		<section class = "jumbotron">
+				<img src = "image/webdevelopment.jpg" alt="web development image"/>
+			</section>
+			
+			<div class = "intro" id = "intro">
+				<div class = "intrcontainer">				
+					<header>
+						<div class = "container intro_header">
+							<h1>Introduction of Our Team: Group 4</h1>
+						</div>
+					</header>				
+					<div class = "person1">
+						<div class = "container">
+							<div class = "row">
+								<div class="one-half column">
+									<div class = "imagecontainer">
+										<div class = "personIMG">
+											<img src = "image/my_image.jpg" alt = "my image">
+										</div>
+									</div>
+								</div>
+								<div class = "one-half column">
+									<div class = "infocontainer">
+										<div class = "personInfo">
+											<p>Name: Song Tao Chen (Chester)
+											</p>
+											<p>Email: schen310@my.bcit.ca
+											</p>
+											<p>Job title: Engineering Technologist
+											</p>
+											<p>Company: Phase Technology
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class = "row">
+								<div class = "description">
+									<p>About Me:  My name is Song Tao Chen and I am a student currently enrolled at BCIT. I am passionate about front end web development. I am currently working in Phase Technology as an engineering technologist. My work on this project is top page layout design and tumblr design. My design concept comes from apple's web page. It looks simple but beautiful. 
+									</p>
+								</div>
+							</div>
+							<hr>						
+						</div>					
+					</div>
+					
+					<div class = "person1">
+						<div class = "container">
+							<div class = "row">
+								<div class="one-half column">
+									<div class = "imagecontainer">
+										<div class = "personIMG">
+											<img src = "image/crista.jpg" alt = "my image">
+										</div>
+									</div>
+								</div>
+								<div class = "one-half column">
+									<div class = "infocontainer">
+										<div class = "personInfo">
+											<p>Name: krista dayton 
+											</p>
+											<p>Email: kdayton@my.bcit.ca
+											</p>
+											<p>Job title: Apple Sales Extraordinaire
+											</p>
+											<p>Company: Apple Inc
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class = "row">
+								<div class = "description">
+									<p>About Me: Currently working with Apple as a Specialist with lofty goal of becoming a backend Web Developer. I have long felt the pull of programming but love to see things working together as I built a program and have finally chosen to focus on backend development because I love programming but feel this is a little more artistic.
+									</p>
+								</div>
+							</div>						
+							<hr>
+						</div>					
+					</div>
+					
+					<div class = "person1">
+						<div class = "container">
+							<div class = "row">
+								<div class="one-half column">
+									<div class = "imagecontainer">
+										<div class = "personIMG">
+											<img src = "image/brett.jpg" alt = "my image">
+										</div>
+									</div>
+								</div>
+								<div class = "one-half column">
+									<div class = "infocontainer">
+										<div class = "personInfo">
+											<p>Name: Brett Parr
+											</p>
+											<p>Email: bparr@my.bcit.ca
+											</p>
+											<p>Job title: Student
+											</p>
+											<p>Institution: BCIT
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class = "row">
+								<div class = "description">
+									<p>About Me: Hi! My name is Brett Parr and I am a student currently enrolled at BCIT. I have very little web development experience, but I very much enjoy learning more and more about web development and design, as my studies continue. A little about myself: I was born in the small town of Bella Coola, British Columbia. It is a beautiful place on the north coast of BC, a town with a population of about 1500. It has some of the best heliskiing and sport fishing locations in the entire world, two activities I love to do when I am not studying or working. I work, study and live in the lower mainland, in beautiful British Columbia.
+									</p>
+								</div>
+							</div>		
+							<hr>
+						</div>					
+					</div>
+					
+				<div class = "person1">
+					<div class = "container">
+						<div class = "row">
+							<div class="one-half column">
+								<div class = "imagecontainer">
+									<div class = "personIMG">
+										<img src = "image/jeff.jpg" alt="Picture of Jeff">
+									</div>
+								</div>
+							</div>
+							<div class = "one-half column">
+								<div class = "infocontainer">
+									<div class = "personInfo">
+										<p>Name: Jeff Ballard 
+										</p>
+										<p>Email: jballard@bcit.ca
+										</p>
+										<p>Job title: Entrepreneur
+										</p>
+										<p>Company: Self-Employed
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class = "row">
+							<div class = "description">
+								<p>About Me: Hello World. Life is a journey with many paths and I plan to explore all of them. One of my life paths seems to be connected to Web Development. I am having a fantastic time learning and decoding this technology. The sheer magnitude of what is possible through all the tools that we are able to access is mind blowing. 
+								</p>
+							</div>
+						</div>						
+						<hr>
+					</div>					
+				</div>
+		<div class = "rational" id = "rational">
+			<div class = "rationcontainer">
+				<div class = "container">
+					<div class = "twelve columns">
+						<div class = "infocontainer">
+						      <div class="twelve columns">             
+							            <div class="menu"><div></div></div>                      
+							            <div class="menu_links">
+							                            <nav>
+							                            <ul class= "nav">							                               
+							                                <li><a href ="#lectures">Class Lectures</a></li>
+							                                <li><a href ="#rationaleBlog">Blog</a></li>
+							                                <li><a href ="#materials">Course Materials</a></li>
+							                                <li><a href ="#design">Design</a></li>
+							                            </ul>
+							                            </nav>
+							            </div>
+							            </div>
+							<div class = "personInfo">
+								
+								<h1>Rationale</h1>
+								
+								<p>Designed as a final project for BCIT's COMP 1950 in order to display what we have learned througout the past months. Our Goal was to create something modern and exciting for our users. To achieve our goal we set out with four basic principles in mind.</p>
+								
+								<div class = "rationalePage">
+								<ul>
+									<li><h2>Simplicity</h2>
+											<p>We achieved this goal by keeping the site on one dynamic page.</p>				
+									</li>
+									<li><h2>Interaction</h2>
+											<p>This site uses Javascript and transitions to help engage the user.</p>
+									</li>
+									<li><h2>Organization</h2>
+											<p>Our layout is designed in a way to give make the site easy for the user to navvigate.</p>
+									</li>
+								    <li><h2>Cohesion</h2>
+										<p>To ensure our site was cohesive, we made sure all of the content was related.</p>
+								    </li>
+								</ul>
+								</div>
+								</div>
+								</div>
+							</div>
+						</div>
+						<div class = "container">
+							<div class = "row">
+								<div class ="one-half column">				
+										<div class="lecture_image hover1">
+											<img src = "image/lecture.jpg" alt="lecture Image">				
+										</div>
+										<div class = "lecture_description description1">
+											<a id="lectures"></a>
+											<h1>Lecture</h1>
+											<p>The Lecture pages provide a place where students can follow and review class lectures. The lecture pages were designed to be visually appealing and easy to navigate.By following our four main principles, we were able to achieve this.</p>
+										</div>								
+								</div>
+								<div class ="one-half column">
+									<div class="lecture_image hover2">
+										<img src = "image/blog2.jpg" alt="blog">								
+									</div>
+									<a id="rationaleBlog"></a>
+									<div class = "lecture_description description2">
+										<h1>Blog</h1>
+										<p>In an effort to improve and facilitate communication between students and teachers of COMP 1950, we have created a Tumblr Blog, allowing students to share and post questions and answers.  This is an accesible place to keep users up-to-date on late-breaking news, share interesting articles and post other notices, directly from the lecture page.</p>
+									</div>
+								</div>
+							</div>
+							<div class = "row">
+								<div class ="one-half column">
+									<div class="lecture_image hover3 ">
+										<img src = "image/course_materials.jpg" alt="Materials">									
+									</div>
+									<div class = "lecture_description description3">
+										<a id="materials"></a>
+										<h1>Materials</h1>
+										<p>One improvement we hope to accomplish with this website is creating, organized and userfriendly access to all course materials beyond the lectures in one space.  This avoids bouncing around trying to work backwards to find it all as it is presented. This includes all downloads, exercises, assignments, readings, and resources pursuant to the course.</p>
+									</div>
+								</div>
+								<div class ="one-half column">
+									<div class="lecture_image hover4 ">
+										<img src = "image/design.jpg" alt="design">
+										
+									</div>
+									<div class = "lecture_description description4">
+									<a id="design"></a>
+										<h1>Design</h1>
+										<p>We wanted to present each page and all of the course information from lectures to resources and exercises in our own unique way but with a cohesive design that aligns with with BCIT's website.  We went with a vary straightforward layout and a very clean look using simple graphics and images. We took our inspiration from some of our favourite sites: apple.com, nait.ca, simplebits.com, and alistapart.com.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>	
+				</div>
+			</div>
+		</div>
+		<div class = "prototype" id = "prototype">
+			<div class = "prototypecontainer">
+				<div class = "container">
+					<div class = "twelve columns">
+						<div class = "infocontainer">
+							<div class = "personInfo">
+								
+									<h1>Prototype Page</h1>
+								
+								<p>The full site will let you access course material with different experience. Notes, exercise, and outline can be read easily. 
+								</p>
+								<div class = "enterNow">
+									<a href = "index.html"> <h2>Enter</h2></a>
+								</div>
+							</div>
+						</div>
+					</div>	
+				</div>
+			</div>
+		</div>
+		<div class = "blog" id = "blog">
+			<div class = "blogcontainer">
+				<div class = "container">
+					<div class = "twelve columns">
+						<div class = "infocontainer">
+							<div class = "personInfo">						
+									<h1>Our Blog
+									</h1>
+								
+								<p> We have created a platform for students to share information and ideas on the courses related topics. Students can easily access tumblr through the link below:
+								</p>
+								<div class = "enterNow1">
+									<a href = "http://ycbq999.tumblr.com/"> <h2 style="color:black; text-decoration: none;">Enter</h2>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>	
+				</div>
+			</div>
+		</div>
+
+		<footer class = "foot" id = "footer">
+			<div class = "footcontainer">
+					<div class = "content">
+						<p>@Copy Right 2015-Dec-7th-2015
+						</p>
+						<p ><a href="mailto:ycbq999@hotmail.com ">Developer's Email</a></p>			
+						<p ><a href="https://twitter.com/bzzrs"> Twitter </a></p>
+					</div>
+			</div>
+		</footer>
+		<div class = "sitemap">
+			<div class = "container">		
+				<hr>
+				<div class = "row">
+					<div class = "list">
+						<ul>
+							<li><h1>Site Map</h1></li>
+							<li><a href ="#home">Home</a></li>
+							<li><a href ="#intro">Intro</a></li>		
+							<li><a href ="#rational">Rationale</a></li>	
+							<li><a href ="#prototype">Prototype</a></li>
+							<li><a href ="#blog">Blog</a></li>	
+							<li><a href="http://validator.w3.org/check?uri=referer">Validate Me</a></li>			
+						</ul>
+					</div>
+					</div>
+				</div>
+			</div>		
+<script>
+/*HAMBURGER*/
+$(document).ready(function(){
+$(".menu").click(function(){
+$(".menu_links").toggle(.9000);
+});
+});
+</script>
+</body>
+
+</html>
